@@ -58,7 +58,7 @@ const Footer = () => {
    
     {
       data.map((ele,index)=>(
-        <p className='hover:bg-white  hover:text-gray-900 bg-gray-900 rounded-lg  p-1 '>{ele.icon}</p>
+        <p  key={index} className='hover:bg-white  hover:text-gray-900 bg-gray-900 rounded-lg  p-1 '>{ele.icon}</p>
       ))
     }
      
