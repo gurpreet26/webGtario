@@ -60,13 +60,14 @@ const Project = () => {
             data.map((ele,index)=> (
 
                   <div
+                  key={index}
         className="flex items-end overflow-hidden bg-cover bg-no-repeat rounded-lg h-64 hover:scale-125"
         style={{
           backgroundImage:`url(${ele.url})` 
             
         }}
       >
-        <div key={index} className="w-full px-8  overflow-hidden rounded-b-lg backdrop-blur-sm bg-white ">
+        <div  className="w-full px-8  overflow-hidden rounded-b-lg backdrop-blur-sm bg-white ">
           <h2 className="mt-2 text-sm text-gray-700 capitalize ">
         {ele.title}
           </h2>
