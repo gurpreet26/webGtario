@@ -66,7 +66,7 @@ const Project = () => {
             
         }}
       >
-        <div className="w-full px-8  overflow-hidden rounded-b-lg backdrop-blur-sm bg-white ">
+        <div key={index} className="w-full px-8  overflow-hidden rounded-b-lg backdrop-blur-sm bg-white ">
           <h2 className="mt-2 text-sm text-gray-700 capitalize ">
         {ele.title}
           </h2>

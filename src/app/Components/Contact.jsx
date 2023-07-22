@@ -41,7 +41,7 @@ const Contact = () => {
 
                     {data.map((ele, index) => (
 
-                        <div className="p-4 rounded-lg  md:p-6 bg-gray-800">
+                        <div  key ={index }className="p-4 rounded-lg  md:p-6 bg-gray-800">
 
                             <span className="inline-block p-3 text-blue-400 rounded-lg bg-gray-900">
                                 {ele.icon}

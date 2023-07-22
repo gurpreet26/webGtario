@@ -53,7 +53,7 @@ const ContactUs = () => {
     <div className="mt-6 space-y-8 md:mt-8">
         {
             data.map((ele, index) =>(
-                <div className="flex items-start text-white mx-1">
+                <div key={index} className="flex items-start text-white mx-1">
               <div className="mx-2  truncate w-12 ">{ele.svg} </div>
                    <p className="mx-2  truncate w-72 ">
                    {ele.name}

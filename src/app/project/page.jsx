@@ -133,7 +133,7 @@ function Column({ isCenter, num }) {
     if (scroll && !isCenter) {
       scroll.on('scroll', (obj) => {
         columnRef.current.style.transform = `translateY(${obj.scroll.y}px)`;
-      });
+      },[]);
     }
 
     return () => {};
