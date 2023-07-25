@@ -14,7 +14,7 @@ const NavBar = () => {
   useLayoutEffect(() => {
     let tl = gsap.timeline();
     let ctx = gsap.context(() => {
-    tl.from(".logo, .menu, .menu1, .menu2, .menu3, .btn",{
+    tl.from(".logo, .menu, .menu1, .menu2, .menu3,.menu4,.btn",{
             opacity: 0,
             y: -20,
             duration:1,
@@ -32,7 +32,7 @@ const NavBar = () => {
 
 
 
-      <header ref={app} className='w-full px-20'  >
+      <header ref={app} className='w-11/12 mx-auto px-20'  >
         {/* <nav className="flex flex-wrap items-center justify-between bg-gray-900 m-auto  py-1 md:py-0.5 px-10 text-lg text-white  ">
         <img className='w-12' src='/11.png' />
           <div className="block lg:hidden">
@@ -66,14 +66,16 @@ const NavBar = () => {
 
         </nav> */}
 
-        <nav  className='text-white hidden md:flex items-center justify-around content-center h-16  font-bold border-b-2 ' >
+        <nav  className='px-6   text-white hidden md:flex items-center justify-between content-center h-16  font-bold border-b-2 ' >
           <div className='logo font-bold tracking-wide text-lg '>WEBGTARIO</div>
-        <div>
+        <div className= {`${isExpanded ? `block` : `hidden`
+            } w-full block  lg:flex lg:items-center lg:w-auto`}>
           <ul className='flex gap-4 font-bold uppercase tracking-wide'> 
-            <li className='menu'>work</li>
-            <li className='menu1'>Service</li>
-            <li className='menu2'>Contact us</li>
-            <li className='menu3'>Blog</li>
+          <Link  onClick={() => toggleExpansion(!isExpanded)}  className="menu md:p-2 block  hover:bg-white  hover:text-gray-900  rounded-lg" href="/"> Home</Link>
+                <Link onClick={() => toggleExpansion(!isExpanded)} className=" menu1 md:p-2 block  hover:bg-white  hover:text-gray-900  rounded-lg" href="/work">Work</Link>
+                <Link onClick={() => toggleExpansion(!isExpanded)} className="menu2 md:p-2 block  hover:bg-white  hover:text-gray-900  rounded-lg" href="/about"> About us</Link>
+                <Link onClick={() => toggleExpansion(!isExpanded)} className=" menu3 md:p-2 block  hover:bg-white  hover:text-gray-900  rounded-lg" href="/service">Service</Link>
+                <Link onClick={() => toggleExpansion(!isExpanded)} className="menu4 md:p-2 block  hover:bg-white  hover:text-gray-900  rounded-lg" href="/contact">Contact Us</Link>
           </ul>
         </div>
 

@@ -10,7 +10,10 @@ const Stats = () => {
       <h2 className="text-center  lg:text-xl  font-semibold leading-8 ">
      We use world top class Web Technologies
       </h2>
-      <div className="flex justify-between items-center gap-3 flex-wrap mt-3  text-center">
+
+<div className='flex justify-between flex-wrap items-center animate-marquee-back '>
+
+      <div className="flex justify-between items-center gap-3 flex-wrap mt-3 overflowx-hidden text-center  w-full border p-6">
       <p className='hover:bg-white hover:text-gray-900 p-2 rounded-xl'>
       <FaFigma className='w-12 h-12 '/>
       Figma
@@ -36,8 +39,18 @@ const Stats = () => {
       <TbBrandMongodb className='w-12 h-12'/>
       Mongodb
       </p>
-    
+   
       </div>
+
+      
+</div>
+  
+  
+  
+ 
+      
+  
+      
     </div>
   </div>
   )

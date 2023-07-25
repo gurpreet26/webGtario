@@ -6,9 +6,10 @@ import {AiOutlineCloudDownload} from 'react-icons/ai'
 import {CgWebsite} from 'react-icons/cg'
 import {BiLogoInstagram,BiLogoGithub,BiLogoLinkedin} from 'react-icons/bi'
 import { useRouter } from 'next/navigation'
+import FadeIn from '../Components/FadeIn'
 const stats= [
     {
-        icon:<IoCodeWorking/>,
+        icon:<IoCodeWorking className='h-12 w-16'/>,
         unit:"30+",
         title:"Projects",
         message:"Its something thats many of the wisest people in history have kept in mind"
@@ -59,7 +60,7 @@ const steps =[
 
 const team=[
     {
-        image:"https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg",
+        image:"https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?w=1380&t=st=1690310699~exp=1690311299~hmac=b5b7cb7fa04f331fe869a67cafcbca43622b36cd2520dda0088d6a69f3a2efae",
         name:"Gurpreet Singh",
         position:"Front end Devloper",
         svg:<svg
@@ -77,7 +78,7 @@ const team=[
 
     },
     {
-        image:"https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg",
+        image:"https://img.freepik.com/free-photo/widely-smiling-businesswoman-working-laptop-sitting-cafe_197531-341.jpg?w=1380&t=st=1690310029~exp=1690310629~hmac=1c647dd7ffe1e1b070207fa5d6e49d6fb50ee2c6d30a6562fc7818865dbe5ab4",
         name:"Henny",
         position:"Designer",
         svg:  <svg
@@ -93,7 +94,7 @@ const team=[
 
     },
     {
-        image:"https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg",
+        image:"https://img.freepik.com/free-photo/young-stylish-smiling-man-co-working-office-startup-freelancer-holding-using-tablet_285396-9048.jpg?w=1380&t=st=1690310759~exp=1690311359~hmac=801714bc43fe0baef3d84f859feb8190e7c0dc5aeca4ae3d026ae1c3cfefa151",
         name:"Jonn Markos",
         position:"Back-end Developer",
         svg:  <svg
@@ -199,6 +200,9 @@ const About = () => {
     </div>
 {/* steps */}
     <div className="px-4 py-16 shadow-lg mx-auto sm:max-w-xl rounded-md bg-gray-900 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+     
+
+    <FadeIn vars={{ y: -200 , duration:1, }} >
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue-400 uppercase rounded-full bg-teal-accent-400">
@@ -206,39 +210,17 @@ const About = () => {
           </p>
         </div>
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
-          <span className="relative inline-block">
-            <svg
-              viewBox="0 0 52 24"
-              fill="currentColor"
-              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-            >
-              <defs>
-                <pattern
-                  id="d0d83814-78b6-480f-9a5f-7f637616b267"
-                  x="0"
-                  y="0"
-                  width=".135"
-                  height=".30"
-                >
-                  <circle cx="1" cy="1" r=".7" />
-                </pattern>
-              </defs>
-              <rect
-                fill="url(#d0d83814-78b6-480f-9a5f-7f637616b267)"
-                width="52"
-                height="24"
-              />
-            </svg>
-            <span className="relative ">How</span>
-          </span>{' '}
-           we make your website
+      
+
+         How  we make your website
         </h2>
         <p className="text-base text-gray-300 md:text-lg">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque rem aperiam, eaque ipsa quae.
         </p>
       </div>
-
+</FadeIn>
+<FadeIn vars={{x: -200 , duration:2,  stagger:4 }} >
       <div className="relative grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
       <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex">
           <div className="w-px h-full bg-gray-300 lg:w-full lg:h-px z-1" />
@@ -263,6 +245,7 @@ const About = () => {
 
         ))}
       </div>
+      </FadeIn>
       <div className="text-center">
         <a
           href="/"
@@ -277,13 +260,16 @@ const About = () => {
 <div className="container my-2 mx-auto md:px-6  rounded-md text-white shadow-xl w-11/12 m-auto ">
 
 <section className="py-4 text-center">
+  <FadeIn vars={{ y: -200 , duration:1, }} >
   <h2 className="my-3 text-4xl font-bold">
     Meet Your Team
   </h2>
+  </FadeIn>
   <div className="grid gap-x-6 md:grid-cols-3 pt-3 lg:gap-x-12">
 
     {
         team.map((ele,index)=>(
+          <FadeIn vars={{ x: -400 , duration:2, }}>
             <div key={index} className="mb-6 lg:mb-0">
             <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <div className="relative overflow-hidden bg-cover bg-no-repeat">
@@ -312,6 +298,7 @@ const About = () => {
        
             
           </div>
+          </FadeIn>
         ))
     }
    

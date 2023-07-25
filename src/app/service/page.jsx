@@ -7,6 +7,7 @@ import Cta from '../Components/Cta'
 const page = () => {
   return (
    <>
+   <Cta/>
    <Service/>
 
 
@@ -84,7 +85,7 @@ const page = () => {
     </div>
   </div>
 </div>
-<Cta/>
+
    </>
   )
 }

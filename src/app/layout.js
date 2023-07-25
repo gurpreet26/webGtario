@@ -3,7 +3,9 @@ import NavBar from './Components/NavBar'
 import './globals.css'
 
 
+import { Bebas_Neue } from 'next/font/google'
 
+const bebas = Bebas_Neue({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
    
-      <body className="bg-slate-950">
+      <body className='bg-gray-950'>
      
         <NavBar></NavBar>
         {children}

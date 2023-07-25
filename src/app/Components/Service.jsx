@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useRef, useLayoutEffect ,useEffect} from 'react'
-import { gsap } from 'gsap'
+import  gsap  from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
 
 
@@ -73,7 +73,6 @@ function Service() {
               trigger: box,
               start: "top 80%",
               end:"bottom 70%",
-              markers:true,
               scrub: 2
             }
           });

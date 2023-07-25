@@ -10,13 +10,18 @@ import Contact from './Components/Contact'
 export default function Home() {
   return (
   <div className='bg-slate-950 p-0 m-0' >
- <Hero/>
- <Stats/>
- <VideoSection/>
+
+
+
  
+
+ <Hero/>
+  {/* <Stats/> */}
+ <VideoSection/>
 <Service/>
 <Project/>
-<Cta/>
+
+
 
 
 <Contact/>

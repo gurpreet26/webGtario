@@ -1,4 +1,5 @@
 import React from 'react'
+import FadeIn from './FadeIn'
 
 const data =[
     {
@@ -44,21 +45,25 @@ const Project = () => {
   <div className="container px-6 py-10 mx-auto ">
     <div className='flex-col flex justify-center items-start'>
 
+<FadeIn vars={{ y: -100 , duration:1, }}>
     <h2 className="text-4xl font-bold tracking-tight lg:text-4xl text-white">
            Latest WORK
         </h2>
+        </FadeIn>
+        <FadeIn vars={{ y: -100 , duration:2, }}>
         <p className="block w-full  mt-4 text  text-gray-300">
             Lorem, ipsum dolor sit amet consectetur
                Lorem, ipsum dolor sit amet consectetur
             adipisicing elit. Esse iure tenetur commodi ipsam error 
             adipisicing elit. Esse iure tenetur commodi ipsam error 
         </p>
+        </FadeIn>
     </div>
   
     <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3">
         {
             data.map((ele,index)=> (
-
+<FadeIn vars={{ y: 100 , duration:3, stagger:0.4 }}>
                   <div
                   key={index}
         className="flex items-end overflow-hidden bg-cover bg-no-repeat rounded-lg h-64 hover:skew-y-3"
@@ -67,6 +72,7 @@ const Project = () => {
             
         }}
       >
+        
         <div  className="w-full px-8  overflow-hidden rounded-b-lg backdrop-blur-sm bg-white ">
           <h2 className="mt-2 text-sm text-gray-700 capitalize ">
         {ele.title}
@@ -76,7 +82,7 @@ const Project = () => {
           </p>
         </div>
       </div>
-
+      </FadeIn>
             ))
         }
     

@@ -5,13 +5,15 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
 import { useRef ,useLayoutEffect,useEffect } from 'react'
 
-gsap.registerPlugin(ScrollTrigger);
+
+
 
 const useIsomorphicLayoutEffect = typeof window !== "undefined" 
   ? useLayoutEffect 
   : useEffect;
 
 const Hero = () => {
+  gsap.registerPlugin(ScrollTrigger);
   const router = useRouter()
   const app = useRef();
 
@@ -19,18 +21,19 @@ const Hero = () => {
     let tl = gsap.timeline();
     let ctx = gsap.context(() => {
     tl.from(".logo, .logo1, .logo2",{
-           x:-500,
-           opacity:0,
-           duration:0.5,
-           stagger:0.5,
-           delay:0.2
+           y:-200,
+           opacity:0.5,
+           duration:1.5,
+           stagger:.1,
+           delay:0.4
           });
           
           tl.from(".image, .image1, .image2",{
-         scale:0.5,
-         opacity:0,
-         duration:0.2,
-         stagger:0.4
+            opacity:0.5,
+            height: "18rem",
+  ease: "expo.inOut",
+  duration: 2,
+       
            });
       
   
@@ -48,6 +51,7 @@ const Hero = () => {
       <div className="flex gap-8 sm:gap-0 sm:justify-around flex-col sm:flex-row">
         <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
+  
             <svg className="logo text-white w-7 h-7" viewBox="0 0 24 24">
               <polyline
                 fill="none"
@@ -89,9 +93,10 @@ const Hero = () => {
                 strokeLinejoin="round"
               />
             </svg>
+         
           </div>
           <div className="max-w-xl mb-6">
-        
+ 
             <h2 className="logo max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white  sm:text-4xl sm:leading-none">
               Let us handle
               <br className="logo hidden md:block" />
@@ -100,7 +105,7 @@ const Hero = () => {
                 destination
               </span>
             </h2>
-           
+         
             <p className="logo text-base text-white md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
