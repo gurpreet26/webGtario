@@ -1,22 +1,39 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
+import { gsap } from 'gsap'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState ,useLayoutEffect} from 'react'
+
 
 const NavBar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
-
-
-
+  const app = useRef();
   const router = useRouter()
+
+  useLayoutEffect(() => {
+    let tl = gsap.timeline();
+    let ctx = gsap.context(() => {
+    tl.from(".logo, .menu, .menu1, .menu2, .menu3, .btn",{
+            opacity: 0,
+            y: -20,
+            duration:1,
+            stagger:0.2,
+          });
+    }, app);
+    
+    return () => ctx.revert();
+  }, []);
+  
+
+
   return (
-    <>
+   
 
 
 
-      <header className='bg-gray-950 '>
-        <nav className="flex flex-wrap items-center justify-between bg-gray-900 m-auto  py-1 md:py-0.5 w-11/12 text-lg text-white  ">
+      <header ref={app} className='w-full px-20'  >
+        {/* <nav className="flex flex-wrap items-center justify-between bg-gray-900 m-auto  py-1 md:py-0.5 px-10 text-lg text-white  ">
         <img className='w-12' src='/11.png' />
           <div className="block lg:hidden">
             <button
@@ -47,11 +64,26 @@ const NavBar = () => {
             Get Quote
           </button>
 
+        </nav> */}
+
+        <nav  className='text-white hidden md:flex items-center justify-around content-center h-16  font-bold border-b-2 ' >
+          <div className='logo font-bold tracking-wide text-lg '>WEBGTARIO</div>
+        <div>
+          <ul className='flex gap-4 font-bold uppercase tracking-wide'> 
+            <li className='menu'>work</li>
+            <li className='menu1'>Service</li>
+            <li className='menu2'>Contact us</li>
+            <li className='menu3'>Blog</li>
+          </ul>
+        </div>
+
+        <button className='btn bg-white text-gray-950 px-4 py-2  rounded-md'> Get Quote</button>
+
         </nav>
       </header>
 
 
-    </>
+  
   )
 }
 

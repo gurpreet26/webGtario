@@ -61,7 +61,7 @@ const Project = () => {
 
                   <div
                   key={index}
-        className="flex items-end overflow-hidden bg-cover bg-no-repeat rounded-lg h-64 hover:scale-125"
+        className="flex items-end overflow-hidden bg-cover bg-no-repeat rounded-lg h-64 hover:skew-y-3"
         style={{
           backgroundImage:`url(${ele.url})` 
             

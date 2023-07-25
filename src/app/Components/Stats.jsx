@@ -10,7 +10,7 @@ const Stats = () => {
       <h2 className="text-center  lg:text-xl  font-semibold leading-8 ">
      We use world top class Web Technologies
       </h2>
-      <div className="flex justify-between items-center gap-4 flex-wrap mt-3  text-center">
+      <div className="flex justify-between items-center gap-3 flex-wrap mt-3  text-center">
       <p className='hover:bg-white hover:text-gray-900 p-2 rounded-xl'>
       <FaFigma className='w-12 h-12 '/>
       Figma
@@ -23,10 +23,6 @@ const Stats = () => {
       <TbBrandNextjs className='w-12 h-12'/>
       NextJs
       </p>
-   
-    
-   
-     
       <p className='hover:bg-white hover:text-gray-900 p-2 rounded-xl'>
       <FaAws className='w-12 h-12'/>
       aws
