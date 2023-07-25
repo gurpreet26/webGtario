@@ -61,9 +61,10 @@ const Project = () => {
     </div>
   
     <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3">
+    <FadeIn vars={{ y: 100 , duration:3, stagger:0.4 }}>
         {
             data.map((ele,index)=> (
-<FadeIn vars={{ y: 100 , duration:3, stagger:0.4 }}>
+
                   <div
                   key={index}
         className="flex items-end overflow-hidden bg-cover bg-no-repeat rounded-lg h-64 hover:skew-y-3"
@@ -82,10 +83,10 @@ const Project = () => {
           </p>
         </div>
       </div>
-      </FadeIn>
+  
             ))
         }
-    
+        </FadeIn>
    
      
     </div>
