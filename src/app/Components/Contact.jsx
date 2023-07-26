@@ -41,10 +41,10 @@ const Contact = () => {
                 </div>
                 </FadeIn>
                 <div className="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-3 ">
-                <FadeIn vars={{ x: 300 ,duration:2 }}>
+            
                     {data.map((ele, index) => (
-                    
-                        <div  key ={index }className="p-4 rounded-lg  md:p-6 bg-gray-800">
+                        <FadeIn vars={{ x: -100 ,duration:1 }}>
+                        <div  className="p-4 rounded-lg  md:p-6 bg-gray-800">
 
                             <span className="inline-block p-3 text-blue-400 rounded-lg bg-gray-900">
                                 {ele.icon}
@@ -59,9 +59,9 @@ const Contact = () => {
                                 {ele.contact}
                             </p>
                         </div>
-                     
+                        </FadeIn>
                     ))}
-   </FadeIn>
+ 
 
 
                 </div>

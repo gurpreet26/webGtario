@@ -23,12 +23,12 @@ const VideoSection = () => {
 
   useIsomorphicLayoutEffect(() => {
     gsap.to(".h1",{
-      transform:"translateX(-90%)",
+      transform:"translateX(-60%)",
       scrollTrigger:{
         trigger:".page1",
         scroller:"body",
         start:"top 0",
-        end:"top -40%",
+        end:"top -20%",
         scrub:5,
        pin:true
       }

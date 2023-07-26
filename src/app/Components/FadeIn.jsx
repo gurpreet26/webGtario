@@ -18,7 +18,7 @@ const FadeIn = ({ children, vars })=>{
               start: "top 80%",
               end:"bottom 70%",
               scrub: 2,
-              ...vars
+            
             
             }
         });

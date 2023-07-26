@@ -266,11 +266,11 @@ const About = () => {
   </h2>
   </FadeIn>
   <div className="grid gap-x-6 md:grid-cols-3 pt-3 lg:gap-x-12">
-  <FadeIn vars={{ x: -400 , duration:2, }}>
+
     {
         team.map((ele,index)=>(
-         
-            <div key={index} className="mb-6 lg:mb-0">
+          <FadeIn key={index} vars={{ x: -400 , duration:2, }}>
+            <div  className="mb-6 lg:mb-0">
             <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <div className="relative overflow-hidden bg-cover bg-no-repeat">
                 <img
@@ -298,10 +298,10 @@ const About = () => {
        
             
           </div>
-      
+          </FadeIn>
         ))
     }
-       </FadeIn>
+     
   </div>
 </section>
 
