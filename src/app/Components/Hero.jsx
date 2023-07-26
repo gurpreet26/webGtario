@@ -24,19 +24,16 @@ const Hero = () => {
         y: -200,
         opacity: 0.5,
         duration: 1.5,
-        stagger: .1,
-        // scrollTrigger:{
-        //   trigger:".logo, .logo1, .logo2",
-        //   scroller:"body"
-        // }
-      
+        stagger: .5,
+       
       });
 
       tl.from(".image, .image1, .image2", {
         opacity: 0.5,
         height: "8rem",
         ease: "expo.inOut",
-        duration: 2,
+        duration: 1,
+        stagger: .5
 
       });
 
@@ -55,7 +52,7 @@ const Hero = () => {
         <div className="flex gap-8 sm:gap-0 sm:justify-around flex-col sm:flex-row">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
-
+            
               <svg className="logo text-white w-7 h-7" viewBox="0 0 24 24">
                 <polyline
                   fill="none"
@@ -101,13 +98,10 @@ const Hero = () => {
             </div>
             <div className="max-w-xl mb-6">
 
-              <h2 className="logo max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white  sm:text-4xl sm:leading-none">
+              <h2 className="logo max-w-lg mb-6 overflow-hidden font-sans text-3xl font-bold tracking-tight text-white  sm:text-4xl sm:leading-none">
                 Let us handle
-                <br className="logo hidden md:block" />
-                your next{' '}
-                <span className="logo inline-block text-deep-purple-accent-400">
-                  destination
-                </span>
+                <br/>
+                your next destination
               </h2>
 
               <p className="logo text-base text-white md:text-lg">

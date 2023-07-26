@@ -34,15 +34,7 @@ const data =[
     {
         image:"/images/9.jpg"
     },
-    {
-        image:"/images/10.jpg"
-    },
-    {
-        image:"/images/11.jpg"
-    },
-    {
-        image:"/images/12.jpg"
-    },
+  
 
     
 ]
@@ -61,21 +53,22 @@ const data1 =[
     {
         image:"/images/19.jpg"
     },
-    {
-        image:"/images/20.jpg"
-    },
-    {
-        image:"/images/21.jpg"
-    },
-    {
-        image:"/images/22.jpg"
-    },
+  
     {
         image:"/images/23.jpg"
     },
     {
         image:"/images/24.jpg"
     },
+    {
+      image:"/images/10.jpg"
+  },
+  {
+      image:"/images/11.jpg"
+  },
+  {
+      image:"/images/12.jpg"
+  },
   
     
 ]

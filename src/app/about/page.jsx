@@ -111,6 +111,7 @@ const team=[
     },
     
 ]
+
 const About = () => {
     const router = useRouter()
   return (
@@ -226,12 +227,12 @@ const About = () => {
           <div className="w-px h-full bg-gray-300 lg:w-full lg:h-px z-1" />
         </div>
         {steps.map((ele,index)=>(
-            <>
+        
          
-        <div className="p-5 duration-300 transform text-gray-900 bg-white border rounded shadow-sm hover:-translate-y-2">
+        <div key={index} className="p-5 duration-300 transform text-gray-900 bg-white border rounded shadow-sm hover:-translate-y-2">
          
 
-          <div key={index} className="flex items-center justify-between mb-2 ">
+          <div  className="flex items-center justify-between mb-2 ">
             <p className="text-lg font-bold leading-5">{ele.name}</p>
             <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
              {ele.unit}
@@ -241,7 +242,7 @@ const About = () => {
           {ele.message}
           </p>
         </div>
-        </>
+     
 
         ))}
       </div>
@@ -265,12 +266,14 @@ const About = () => {
     Meet Your Team
   </h2>
   </FadeIn>
+
+  <FadeIn vars={{ x: -400 , duration:2, }}>
   <div className="grid gap-x-6 md:grid-cols-3 pt-3 lg:gap-x-12">
 
     {
         team.map((ele,index)=>(
-          <FadeIn key={index} vars={{ x: -400 , duration:2, }}>
-            <div  className="mb-6 lg:mb-0">
+      
+            <div key={index}  className="mb-6 lg:mb-0">
             <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <div className="relative overflow-hidden bg-cover bg-no-repeat">
                 <img
@@ -298,11 +301,12 @@ const About = () => {
        
             
           </div>
-          </FadeIn>
+        
         ))
     }
      
   </div>
+  </FadeIn>
 </section>
 
 </div>

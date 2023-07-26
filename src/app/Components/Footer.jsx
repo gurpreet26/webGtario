@@ -19,7 +19,7 @@ const data =[
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-950 flex flex-col justify-center items-center dark:bg-gray-900">
+    <footer className="bg-slate-950 flex mt-4 flex-col justify-center items-center dark:bg-gray-900">
     <div className="container flex flex-col items-center justify-between px-6 py-8 mx-auto lg:flex-row">
      
     <p className="mt-6 text-base text-white lg:mt-0 hover:bg-white  hover:text-gray-900 bg-gray-900 rounded-lg  p-2 ">

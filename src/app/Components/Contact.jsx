@@ -40,7 +40,7 @@ const Contact = () => {
                     </p>
                 </div>
                 </FadeIn>
-                <div className="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-3 ">
+                <div className="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-3 p-4">
             
                     {data.map((ele, index) => (
                         <FadeIn key={index} vars={{ x: -100 ,duration:1 }}>

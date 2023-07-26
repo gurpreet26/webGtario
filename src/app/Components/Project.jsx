@@ -60,7 +60,7 @@ const Project = () => {
         </FadeIn>
     </div>
   
-    <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3 overflow-hidden ">
     
         {
             data.map((ele,index)=> (

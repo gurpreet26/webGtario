@@ -68,6 +68,7 @@ function Service() {
         boxes.forEach((box) => {
           gsap.from(box, { 
             x:-100,
+            stagger: .5,
             opacity:0,
             scrollTrigger: {
               trigger: box,
