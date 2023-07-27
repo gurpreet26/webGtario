@@ -36,8 +36,8 @@ const Hero = () => {
         stagger: .5
 
       });
-
-
+     
+     
 
     }, app);
 
@@ -157,6 +157,7 @@ const Hero = () => {
 
           </div>
         </div>
+
       </div>
 
 

@@ -31,7 +31,7 @@ const Cta = () => {
       {
         opacity: 0,
        duration:2,
-       y:-100,
+       y:100,
       
       }
     );

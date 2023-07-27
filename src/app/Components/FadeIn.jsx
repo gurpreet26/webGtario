@@ -19,10 +19,7 @@ const FadeIn = ({ children, vars })=>{
               trigger: el.current,
               start: "top 80%",
               end:"bottom 80%",
-              scrub: 3,
-             
-             
-            
+              scrub: 3,   
             }
         });
       });
