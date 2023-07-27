@@ -66,7 +66,7 @@ const NavBar = () => {
 
         </nav> */}
 
-        <nav  className='px-6   text-white hidden md:flex items-center justify-between content-center h-16  font-bold border-b-2 ' >
+        <nav  className='px-6   text-white  md:flex items-center justify-between content-center h-16  font-bold border-b-2 ' >
           <div className='logo font-bold tracking-wide text-lg '>WEBGTARIO</div>
         <div className= {`${isExpanded ? `block` : `hidden`
             } w-full block  lg:flex lg:items-center lg:w-auto`}>
