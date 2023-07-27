@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="container flex flex-col items-center justify-between  py-2 lg:pt-6 lg:flex-row">
 
     
-        <Link className="text-base lg:text-xl text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900 bg-gray-950 rounded-lg  px-8 " href="/">WEBGTARIO</Link>
+        <Link className="text-base lg:text-xl text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900  rounded-lg  px-8 " href="/">WEBGTARIO</Link>
        
 
         <div className="flex flex-wrap items-center justify-center gap-4  lg:mt-0">

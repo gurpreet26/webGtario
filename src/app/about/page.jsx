@@ -86,7 +86,7 @@ const About = () => {
 
      tl.from(".h1, .par", {
         x: -200,
-        ease: "steps(12)",
+      
         opacity: 0,
         duration:.3,
         stagger: 0.3,
@@ -108,7 +108,8 @@ const About = () => {
           opacity: 0,
           scrollTrigger: {
             trigger: box,
-            start: "top 80%",
+        
+            start: "top 90%",
             end: "bottom 90%",
             scrub: 4
           }
@@ -121,6 +122,7 @@ const About = () => {
           opacity: 1,
           scrollTrigger: {
             trigger: box,
+           
             start: "top 80%",
             end: "bottom 80%",
             scrub: 4
@@ -137,8 +139,8 @@ const About = () => {
      scrollTrigger: {
       trigger: ".faq",
       start: "top 80%",
-     
-      end: "bottom 80%",
+      markers:true,
+      end: "bottom 40%",
       scrub: 2
     }
 
