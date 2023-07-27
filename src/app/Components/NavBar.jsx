@@ -66,6 +66,7 @@ const NavBar = () => {
 
         </nav> */}
 
+<<<<<<< HEAD
 
         <nav className="flex flex-wrap items-center justify-between bg-gray-900 m-auto   md:py-2 mx-10 px-2 text-lg text-white lg:rounded-xl content-center   font-bold border-b-2 ">
         <img className='w-12' src='/11.png' />
@@ -100,6 +101,9 @@ const NavBar = () => {
 
         </nav>
         {/* <nav  className='px-6   text-white  flex items-center justify-between content-center h-16  font-bold border-b-2 ' >
+=======
+        <nav  className='px-6   text-white  md:flex items-center justify-between content-center h-16  font-bold border-b-2 ' >
+>>>>>>> origin/main
           <div className='logo font-bold tracking-wide text-lg '>WEBGTARIO</div>
           <div className="block md:hidden">
             <button
