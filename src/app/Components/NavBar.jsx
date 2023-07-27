@@ -32,9 +32,9 @@ const NavBar = () => {
 
 
 
-    <header ref={app} className='mx-auto ' >
+    <header ref={app} className='' >
 
-      <nav className="flex flex-wrap items-center justify-between bg-gray-900 m-auto   md:py-2 mx-10 px-2 text-lg text-white lg:rounded-xl content-center   font-bold border-b-2 ">
+      <nav className="flex flex-wrap items-center justify-between  md:py-2 md:mx-10 px-2 text-lg text-white  content-center font-bold border-b-2 ">
         <img className='w-12' src='/11.png' />
         <div className="block lg:hidden">
           <button
