@@ -17,6 +17,9 @@ const data =[
         image:"/images/3.jpg"
     },
     {
+      image:"/images/9.jpg"
+  },
+    {
         image:"/images/4.jpg"
     },
     {
@@ -31,16 +34,23 @@ const data =[
     {
         image:"/images/8.jpg"
     },
+  
     {
-        image:"/images/9.jpg"
+        image:"/images/10.jpg"
+    },
+    {
+        image:"/images/11.jpg"
+    },
+    {
+        image:"/images/12.jpg"
     },
   
 
-    
+
 ]
 const data1 =[
-   
-   
+
+
     {
         image:"/images/17.jpg"
     },
@@ -53,24 +63,17 @@ const data1 =[
     {
         image:"/images/19.jpg"
     },
-  
+ 
+   
+
     {
         image:"/images/23.jpg"
     },
     {
         image:"/images/24.jpg"
     },
-    {
-      image:"/images/10.jpg"
-  },
-  {
-      image:"/images/11.jpg"
-  },
-  {
-      image:"/images/12.jpg"
-  },
-  
-    
+
+
 ]
 
     gsap.registerPlugin(ScrollTrigger);
@@ -111,7 +114,7 @@ const ScrollTriggerDirectionalMovement = () => {
 
   return (
     <div className="scroller h-screen overflow-auto text-[12vw] overflow-x-hidden bg-cream ">
-     
+
       <section className="h-fit">
         <div className="wrapper flex md:text-[16vh] text-white font-medium overflow whitespace-nowrap">
           Keep smiling
@@ -119,16 +122,16 @@ const ScrollTriggerDirectionalMovement = () => {
       </section>
       {data.map((el,index) => (
         <section key={index}>
-          <div className="wrapper flex text-[16vh] font-medium  ">
+          <div className="wrapper w-[96rem] md:w-screen flex text-[16vh] font-medium  ">
             {data1.map((el2,index) => (
-              
+
               <img
                 key={index}
-                className="h-80 rounded-xl m-2 transition-all hover:scale-95 cursor-pointer "
+                className="h-80 rounded-xl m-2 w-screen transition-all hover:scale-95 cursor-pointer "
                 src={el2.image}
               />
-            
-           
+
+
             ))}
           </div>
         </section>
@@ -151,8 +154,8 @@ const ScrollTriggerDirectionalMovement = () => {
           </div>
         </section>
       ))}
- 
-    
+
+
     </div>
   );
 };

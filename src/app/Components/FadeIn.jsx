@@ -17,10 +17,10 @@ const FadeIn = ({ children, vars })=>{
             scrollTrigger: {
               trigger: el.current,
               start: "top 80%",
-              end:"bottom 70%",
+              end:"bottom 80%",
               scrub: 4,
-       
-            
+             
+             
             
             }
         });
