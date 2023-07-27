@@ -23,7 +23,7 @@ const Footer = () => {
     <div className="container flex flex-col items-center justify-between px-6 py-8 mx-auto lg:flex-row">
      
     <p className="mt-6 text-base text-white lg:mt-0 hover:bg-white  hover:text-gray-900 bg-gray-900 rounded-lg  p-2 ">
-        © Copyright 2023 Meraki UI.{" "}
+        © Copyright 2023 webGtario.{" "}
       </p>
       <a href="#">
       <img className='w-12' src='/11.png'/>
@@ -31,26 +31,10 @@ const Footer = () => {
      
     
       <div className="flex flex-wrap items-center justify-center gap-4 mt-6 lg:gap-6 lg:mt-0">
-        <a
-          href="#"
-          className="text-base text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900 bg-gray-900 rounded-lg  p-2 "
-        >
-          Overview
-        </a>
-        <a
-          href="#"
-          className="text-base text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900 bg-gray-900 rounded-lg  p-2 "
-        >
-          Features
-        </a>
-        <a
-          href="#"
-          className="text-base text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900 bg-gray-900 rounded-lg  p-2 "
-        >
-          Pricing
-        </a>
-    
-   
+      
+   <Link className="text-base text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900 bg-gray-900 rounded-lg  p-2" href="/">HOME</Link>
+   <Link className="text-base text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900 bg-gray-900 rounded-lg  p-2" href="/service">SERVICE</Link>
+   <Link className="text-base text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900 bg-gray-900 rounded-lg  p-2" href="/about">ABOUT</Link>
       </div>
     </div>
 
