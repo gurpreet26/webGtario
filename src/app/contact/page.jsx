@@ -82,7 +82,7 @@ const ContactUs = () => {
 
 
 <img
-  className="image object-cover w-full h-64 rounded-lg lg:h-96"
+  className="image object-cover w-full h-64 rounded-lg mt-1 lg:h-96"
   src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=100"
   alt=""
 />

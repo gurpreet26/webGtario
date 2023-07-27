@@ -140,12 +140,10 @@ const About = () => {
         ease: "steps(12)",
         opacity: 0,
         duration:.3,
-        stagger: 0.1,
+        stagger: 0.3,
        
       });
       tl.from(".img1", {
- 
-       
         opacity: 0,
         duration:2,
       height:"200vh"
@@ -171,7 +169,6 @@ const About = () => {
       const teams = self.selector(".team");
       teams.forEach((box) => {
         gsap.from(box, {
-
           width: "1rem",
           opacity: 0,
           scrollTrigger: {
@@ -191,7 +188,7 @@ const About = () => {
      ease: "slow(0.7, 0.7, false)",
      scrollTrigger: {
       trigger: ".faq",
-      start: "top 60%",
+      start: "top 80%",
      
       end: "bottom 80%",
       scrub: 2
