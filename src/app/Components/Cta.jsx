@@ -1,14 +1,51 @@
+
+
+"use client"
 import React from 'react'
+import { useRef, useLayoutEffect ,useEffect} from 'react'
+import  gsap  from 'gsap'
+
+const useIsomorphicLayoutEffect = typeof window !== "undefined" 
+? useLayoutEffect 
+: useEffect;
+
 
 const Cta = () => {
+
+  const ref = useRef();
+  useIsomorphicLayoutEffect(() => {
+    const element = ref.current;
+    const tl =gsap.timeline()
+    tl.from(
+      element.querySelector(".image"),
+      {
+        opacity: 0.3,
+       duration:2,
+
+     
+      width:"10vw"
+      }
+    );
+    tl.from(
+      element.querySelector(".text"),
+      {
+        opacity: 0,
+       duration:2,
+       y:-100,
+      
+      }
+    );
+   
+    }, []);
   return (
    
-  
-   
-      <div className=" my-6 relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('https://mdbcdn.b-cdn.net/img/new/slides/006.webp')] h-96">
-        <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed">
+ 
+  <div ref={ref} >
+      <div className="image my-6 relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('https://mdbcdn.b-cdn.net/img/new/slides/006.webp')] h-96">
+        <div className=" absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden  bg-fixed">
           <div className="flex h-full items-center justify-center">
-            <div className="px-6 text-center text-white md:px-12">
+         
+            <div className="text px-6 text-center text-white md:px-12">
               <h2 className="mb-12 text-5xl font-bold leading-tight tracking-tight">
                 Are you ready <br />
                 <span>for an adventure</span>
@@ -22,11 +59,12 @@ const Cta = () => {
                 Get started
               </button>
             </div>
+
           </div>
         </div>
       </div>
-  
-
+      </div>
+   
  
   
   )

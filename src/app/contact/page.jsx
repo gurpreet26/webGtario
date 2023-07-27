@@ -1,9 +1,16 @@
+"use client"
 import React from 'react'
+import { useRef, useLayoutEffect ,useEffect} from 'react'
+import  gsap  from 'gsap'
+import { ScrollTrigger } from 'gsap/all';
 import {BiLogoInstagram,BiLogoGithub,BiLogoLinkedin} from 'react-icons/bi'
 import { MdOutlineMail } from 'react-icons/md'
 import {IoLocationOutline} from 'react-icons/io5'
 import {BsTelephone} from 'react-icons/bs'
 
+import FadeIn from '../Components/FadeIn'
+ 
+gsap.registerPlugin(ScrollTrigger);
 const data= [
     {
         svg:  <IoLocationOutline className='h-6 w-10'/>,
@@ -18,21 +25,71 @@ const data= [
         name:"+1 (226) 402 0355"
     },
 ]
+const useIsomorphicLayoutEffect = typeof window !== "undefined" 
+? useLayoutEffect 
+: useEffect;
 
 const ContactUs = () => {
+
+  const ref = useRef();
+  useIsomorphicLayoutEffect(() => {
+    const element = ref.current;
+    const tl =gsap.timeline()
+    tl.from(
+      element.querySelector(".image"),
+      {
+        opacity: 0.3,
+       duration:4,
+       delay:.3,
+       stagger:2,
+       height: "70rem",
+      }
+    );
+    tl.from(
+      element.querySelector(".top"),
+      {
+        opacity: 0.3,
+       duration:2,
+       y:-200
+      }
+    )
+    tl.from(
+      element.querySelector(".left"),
+      {
+        opacity: 0,
+       duration:1,
+        stagger:.3,
+       x:-200,
+   
+      }
+    )
+    tl.from(
+      element.querySelector(".right"),
+      {
+        opacity: 0,
+       duration:1,
+       x:200,
+      }
+    )
+   
+    }, []);
   return (
   
-  <section className=" bg-gray-900 w-11/12 m-auto">
+    
+  <section ref={ref} className="first bg-gray-900 w-11/12 m-auto">
 
- 
+
+
+
 <img
-  className="object-cover w-full h-64 rounded-lg lg:h-96"
+  className="image object-cover w-full h-64 rounded-lg lg:h-96"
   src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=100"
   alt=""
 />
 
+
 <div className=' w-full m-auto shadow-lg'>
-<div className="text-center mt-8 ">
+<div className="top text-center mt-8 ">
   <p className="font-medium text-white ">Contact us</p>
   <h1 className="mt-2 text-2xl font-semibold text-white md:text-3xl dark:text-white">
     We’d love to hear from you
@@ -46,7 +103,7 @@ const ContactUs = () => {
 <section className="bg-gray-900">
 <div className="container px-6 py-3 mx-auto">
 <div className="lg:flex lg:items-center lg:-mx-6">
-  <div className="lg:w-1/2 lg:mx-6">
+  <div className="left lg:w-1/2 lg:mx-6">
     <h1 className="text-2xl font-semibold capitalize hidden md:inline text-white lg:text-3xl">
       Contact us for more info
     </h1>
@@ -76,7 +133,8 @@ const ContactUs = () => {
       </div>
     </div>
   </div>
-  <div className="mt-8 lg:w-1/2 lg:mx-6">
+
+  <div className="right mt-8 lg:w-1/2 lg:mx-6">
     <div className="w-full px-4 py-10 mx-auto overflow-hidden rounded-lg shadow-2xl bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
       <h1 className="text-lg font-medium text-gray-300">
         What do you want to ask

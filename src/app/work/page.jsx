@@ -64,7 +64,18 @@ const data1 =[
         image:"/images/19.jpg"
     },
  
-   
+    {
+      image:"/images/8.jpg"
+  },
+
+  {
+      image:"/images/10.jpg"
+  },
+  {
+      image:"/images/11.jpg"
+  },
+  {
+      image:"/images/12.jpg"},
 
     {
         image:"/images/23.jpg"
@@ -143,7 +154,7 @@ const ScrollTriggerDirectionalMovement = () => {
       </section>
       {data1.map((el,index) => (
         <section key={index}>
-          <div  className="wrapper flex text-[16vh] font-medium ">
+          <div  className="wrapper w-[96rem] md:w-screen flex text-[16vh] font-medium ">
             {data.map((el2,index) => (
               <img
                 key={index}

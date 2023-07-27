@@ -12,13 +12,14 @@ const FadeIn = ({ children, vars })=>{
         Animation.current = gsap.from(el.current.children, { 
            
             opacity:0,
-            stagger:.4,
+            duration: 2,
+            stagger:1,
             ...vars,
             scrollTrigger: {
               trigger: el.current,
               start: "top 80%",
               end:"bottom 80%",
-              scrub: 4,
+              scrub: 3,
              
              
             

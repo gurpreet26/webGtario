@@ -203,7 +203,7 @@ const About = () => {
     <div className="px-4 py-16 shadow-lg mx-auto sm:max-w-xl rounded-md bg-gray-900 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
      
 
-    <FadeIn vars={{ y: -200 , duration:1, }} >
+
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue-400 uppercase rounded-full bg-teal-accent-400">
@@ -220,8 +220,8 @@ const About = () => {
           accusantium doloremque rem aperiam, eaque ipsa quae.
         </p>
       </div>
-</FadeIn>
-<FadeIn vars={{x: -200 , duration:2,  stagger:4 }} >
+
+
       <div className="relative grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
       <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex">
           <div className="w-px h-full bg-gray-300 lg:w-full lg:h-px z-1" />
@@ -246,7 +246,7 @@ const About = () => {
 
         ))}
       </div>
-      </FadeIn>
+   
       <div className="text-center">
         <a
           href="/"
@@ -261,13 +261,13 @@ const About = () => {
 <div className="container my-2 mx-auto md:px-6  rounded-md text-white shadow-xl w-11/12 m-auto ">
 
 <section className="py-4 text-center">
-  <FadeIn vars={{ y: -200 , duration:1, }} >
+
   <h2 className="my-3 text-4xl font-bold">
     Meet Your Team
   </h2>
-  </FadeIn>
 
-  <FadeIn vars={{ x: -400 , duration:2, }}>
+
+
   <div className="grid gap-x-6 md:grid-cols-3 pt-3 lg:gap-x-12">
 
     {
@@ -306,7 +306,7 @@ const About = () => {
     }
      
   </div>
-  </FadeIn>
+
 </section>
 
 </div>
