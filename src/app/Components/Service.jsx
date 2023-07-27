@@ -61,6 +61,7 @@ const data =[
   : useEffect;
 
 function Service() {
+  
     const app = useRef();
   useIsomorphicLayoutEffect(() => {
       const ctx = gsap.context((self) => {
