@@ -21,7 +21,8 @@ const Cta = () => {
       {
         opacity: 0.3,
        duration:2,
-       height: "70rem",
+       
+      rotateX:360
       }
     );
     tl.from(
@@ -39,7 +40,7 @@ const Cta = () => {
    
  
   <div ref={ref} >
-      <div className="image my-6 relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('https://mdbcdn.b-cdn.net/img/new/slides/006.webp')] h-96">
+      <div className="image my-2 relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('https://mdbcdn.b-cdn.net/img/new/slides/006.webp')] h-96">
         <div className=" absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden  bg-fixed">
           <div className="flex h-full items-center justify-center">
          

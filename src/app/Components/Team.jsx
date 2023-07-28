@@ -115,7 +115,7 @@ const Team = () => {
 
                 <div className="p-6 text-gray-900">
                   <h5 className="mb-4 text-lg font-bold">{ele.name}</h5>
-                  <p className="mb-4  dark:text-neutral-300">
+                  <p className="mb-4  dark:text-neutral-500">
                     {ele.position}
                   </p>
                   <ul className="mx-auto flex list-inside gap-3 justify-center">

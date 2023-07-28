@@ -46,17 +46,17 @@ const steps = [
   },
   {
     name: "Design",
-    unit: "1",
+    unit: "2",
     message: " Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm."
   },
   {
     name: "Development",
-    unit: "1",
+    unit: "3",
     message: " Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm."
   },
   {
     name: "Test",
-    unit: "1",
+    unit: "4",
     message: " Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm."
   },
 
@@ -169,7 +169,7 @@ const About = () => {
               alt=""
             />
           </div>
-          <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+          <div className="relative overflow-hidden flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
             <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
               <p className="h1 inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue-500 uppercase rounded-full bg-teal-accent-400">
                 Brand new
@@ -182,6 +182,9 @@ const About = () => {
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae. explicabo.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+               
               </p>
               <div className="par flex items-center">
                 <button className=" inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide bg-blue-500 text-white transition duration-200 rounded shadow-md "

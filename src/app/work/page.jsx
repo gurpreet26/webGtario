@@ -127,8 +127,8 @@ const ScrollTriggerDirectionalMovement = () => {
     <div className="scroller h-screen overflow-auto text-[12vw] overflow-x-hidden bg-cream ">
 
       <section className="h-fit">
-        <div className="wrapper flex md:text-[16vh] text-white font-medium overflow whitespace-nowrap">
-          Keep smiling
+        <div className="wrapper flex md:text-[18vh] text-white font-medium overflow ">
+         Scroll Down
         </div>
       </section>
       {data.map((el,index) => (
@@ -136,11 +136,13 @@ const ScrollTriggerDirectionalMovement = () => {
           <div className="wrapper w-[96rem] md:w-screen flex text-[16vh] font-medium  ">
             {data1.map((el2,index) => (
 
-              <img
+<img
                 key={index}
                 className="h-80 rounded-xl m-2 w-screen transition-all hover:scale-95 cursor-pointer "
                 src={el2.image}
               />
+              
+     
 
 
             ))}
@@ -149,7 +151,7 @@ const ScrollTriggerDirectionalMovement = () => {
       ))}
       <section className="h-fit">
         <div className="wrapper flex md:text-[16vh] text-white font-medium overflow whitespace-nowrap">
-          because life is a beautiful thing
+          We Make beautiful mind set
         </div>
       </section>
       {data1.map((el,index) => (
