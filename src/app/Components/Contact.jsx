@@ -8,19 +8,19 @@ const data = [
         icon: <MdOutlineMail/>,
         name: " Email",
         message: "Speak to our friendly team.",
-        contact: " hello@merakiui.com"
+        contact: " hello@mogastudio.com"
     },
     {
-        icon: <IoLocationOutline/>,
+        icon:<BsTelephone/> ,
         name: "Phone",
         message: "Speak to our friendly team.",
         contact: "+1 226 402 0355"
     },
     {
-        icon: <BsTelephone/>,
+        icon: <IoLocationOutline/>,
         name: "Office",
         message: "Visit our office",
-        contact: "77 James Street, Hamilton, ON"
+        contact: "77 James St N, Hamilton, ON L8R 2K3"
     }
 ]
 

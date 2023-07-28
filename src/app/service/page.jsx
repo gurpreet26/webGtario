@@ -22,62 +22,78 @@ const page = () => {
                 Plan
               </th>
               <th scope="col" className="px-6 py-4">
-               Starter
+               Basic Website
               </th>
               <th scope="col" className="px-6 py-4">
-                Popular
+                E-Commerce
               </th>
               <th scope="col" className="px-6 py-4">
-               Custom
+               Custom Website
               </th>
             </tr>
           </thead>
           <tbody>
+          <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">No of Pages</td>
+              <td className="whitespace-nowrap px-6 py-4">3-5 pages</td>
+              <td className="whitespace-nowrap px-6 py-4">10-12 pages</td>
+              <td className="whitespace-nowrap px-6 py-4">unlimited pages</td>
+            </tr>
+
             <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Domain</td>
+              <td className="whitespace-nowrap px-6 py-4 font-medium">Revision</td>
+              <td className="whitespace-nowrap px-6 py-4">4 Rounds </td>
+              <td className="whitespace-nowrap px-6 py-4">10 Rounds</td>
+              <td className="whitespace-nowrap px-6 py-4">unlimited</td>
+            </tr>
+            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">Online Reservation/Appointment Tool</td>
+              <td className="whitespace-nowrap px-6 py-4 ">On Demand</td>
+              <td className="whitespace-nowrap px-6 py-4">On Demand</td>
+              <td className="whitespace-nowrap px-6 py-4">On Demand</td>
+            </tr>
+            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">Free hosting for 1 year</td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
             </tr>
             <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Seo</td>
-           
+              <td className="whitespace-nowrap px-6 py-4 font-medium">Mobile Responsive</td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+            </tr>
+            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">Contact Form</td>
+              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+            </tr>
+        
+            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">Zoom meeting "How to use"</td>
+              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+            </tr>
+            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">Social Media Integration</td>
+              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+            </tr>
+
+          
+          
+            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">Custom Design</td>
               <td className="whitespace-nowrap px-6 py-4"><RxCross2/></td>
-            </tr>
-            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Hosting</td>
-              <td className="whitespace-nowrap px-6 py-4">Larry</td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-            </tr>
-            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Domain</td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
+              <td className="whitespace-nowrap px-6 py-4"><RxCross2/></td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
             </tr>
          
-            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Seo</td>
-           
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-            </tr>
-            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Hosting</td>
-              <td className="whitespace-nowrap px-6 py-4">Larry</td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-            </tr>
-            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Domain</td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-            </tr>
+      
          
           </tbody>
         </table>

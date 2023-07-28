@@ -21,9 +21,7 @@ const Cta = () => {
       {
         opacity: 0.3,
        duration:2,
-
-     
-      width:"10vw"
+       height: "70rem",
       }
     );
     tl.from(
@@ -48,16 +46,8 @@ const Cta = () => {
             <div className="text px-6 text-center text-white md:px-12">
               <h2 className="mb-12 text-5xl font-bold leading-tight tracking-tight">
                 Are you ready <br />
-                <span>for an adventure</span>
+                <span>for an Web adventure</span>
               </h2>
-              <button
-                type="button"
-                className="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
-                data-te-ripple-init=""
-                data-te-ripple-color="light"
-              >
-                Get started
-              </button>
             </div>
 
           </div>

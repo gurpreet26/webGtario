@@ -17,8 +17,9 @@ export default function Home() {
 
  <Hero/>
   {/* <Stats/> */}
- {/* <VideoSection/> */}
+
 <Service/>
+<VideoSection/>
 <Project/>
 
 

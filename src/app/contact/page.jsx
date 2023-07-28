@@ -3,7 +3,7 @@ import React from 'react'
 import { useRef, useLayoutEffect ,useEffect} from 'react'
 import  gsap  from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
-import {BiLogoInstagram,BiLogoGithub,BiLogoLinkedin} from 'react-icons/bi'
+import {BiLogoInstagram,BiLogoGithub,BiLogoLinkedin,BiLogoTiktok} from 'react-icons/bi'
 import { MdOutlineMail } from 'react-icons/md'
 import {IoLocationOutline} from 'react-icons/io5'
 import {BsTelephone} from 'react-icons/bs'
@@ -14,11 +14,11 @@ gsap.registerPlugin(ScrollTrigger);
 const data= [
     {
         svg:  <IoLocationOutline className='h-6 w-10'/>,
-        name:"77 James street,  Hamilton, ON"
+        name:"77 James St N, Hamilton, ON L8R 2K3"
     },
     {
         svg:  <MdOutlineMail className='h-6 w-10'/>,
-        name:"info@webGtario.com"
+        name:"hello@mogastudio.com"
     },
     {
         svg:  <BsTelephone className='h-6 w-10'/>,
@@ -39,7 +39,7 @@ const ContactUs = () => {
       element.querySelector(".image"),
       {
         opacity: 0.3,
-       duration:4,
+       duration:3,
        delay:.3,
        stagger:2,
        height: "70rem",
@@ -49,7 +49,7 @@ const ContactUs = () => {
       element.querySelector(".top"),
       {
         opacity: 0.3,
-       duration:2,
+       duration:1,
        y:-200
       }
     )
@@ -130,6 +130,7 @@ const ContactUs = () => {
         <BiLogoGithub className='h-10 w-8'/>
              <BiLogoLinkedin className='h-10 w-8  '/>
              <BiLogoInstagram className='h-10 w-8 '/>
+             <BiLogoTiktok  className='h-10 w-8 '/>
       </div>
     </div>
   </div>

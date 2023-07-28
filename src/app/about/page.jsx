@@ -13,7 +13,7 @@ import FadeIn from '../Components/FadeIn'
 import Team from '../Components/Team';
 const stats = [
   {
-    icon: <IoCodeWorking className='h-12 w-16' />,
+    icon: <IoCodeWorking/>,
     unit: "30+",
     title: "Projects",
     message: "Its something thats many of the wisest people in history have kept in mind"
@@ -175,12 +175,8 @@ const About = () => {
                 Brand new
               </p>
               <h2 className="h1 mb-5 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                Everything you
-                <br className=" hidden md:block" />
-                can imagine{' '}
-                <span className="h1 inline-block text-deep-purple-accent-400">
-                  is real
-                </span>
+                Everything you  Sed ut perspiciatis 
+                
               </h2>
               <p className="par pr-5 mb-5 text-base text-white md:text-lg">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -216,7 +212,7 @@ const About = () => {
 
               <div className="flex  items-center justify-center  mx-auto rounded-full  ">
 
-                <svg className='w-12 h-12  text-white sm:w-10 sm:h-12'>
+                <svg className='text-white w-12 h-10'>
                   {ele.icon}</svg>
 
               </div>
