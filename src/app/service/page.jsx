@@ -71,27 +71,8 @@ const page = () => {
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
             </tr>
         
-            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Zoom meeting "How to use"</td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-            </tr>
-            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Social Media Integration</td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-            </tr>
-
-          
-          
-            <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Custom Design</td>
-              <td className="whitespace-nowrap px-6 py-4"><RxCross2/></td>
-              <td className="whitespace-nowrap px-6 py-4"><RxCross2/></td>
-              <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
-            </tr>
+         
+       
          
       
          
