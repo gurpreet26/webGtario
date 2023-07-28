@@ -3,6 +3,11 @@ import { useRef,useLayoutEffect } from "react";
 import  gsap  from "gsap";
 import { Animation } from "gsap/gsap-core";
 
+
+const useIsomorphicLayoutEffect = typeof window !== "undefined"
+  ? useLayoutEffect
+  : useEffect;
+
 const FadeIn = ({ children, vars })=>{
     const el = useRef();
     
