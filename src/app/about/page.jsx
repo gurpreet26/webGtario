@@ -139,7 +139,6 @@ const About = () => {
      scrollTrigger: {
       trigger: ".faq",
       start: "top 80%",
-      markers:true,
       end: "bottom 40%",
       scrub: 2
     }

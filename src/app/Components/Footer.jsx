@@ -2,6 +2,7 @@ import React from 'react'
 import { BiLogoLinkedin, BiLogoInstagram, BiLogoFacebookSquare } from 'react-icons/bi'
 import { FaTiktok } from 'react-icons/fa'
 import Link from 'next/link'
+import FadeIn from './FadeIn'
 
 const data = [
   {
@@ -24,7 +25,7 @@ const Footer = () => {
       <div className="container flex flex-col items-center justify-between  py-2 lg:pt-6 lg:flex-row">
 
     
-        <Link className="text-base lg:text-xl text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900  rounded-lg  px-8 " href="/">WEBGTARIO</Link>
+        <Link className="text-base lg:text-xl text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900  rounded-lg  px-8 " href="/"><img className='logo h-12 text-white' src='/images/11.png' /></Link>
        
 
         <div className="flex flex-wrap items-center justify-center gap-4  lg:mt-0">
@@ -44,7 +45,9 @@ const Footer = () => {
 
         {
           data.map((ele, index) => (
+          
             <p key={index} className='hover:bg-white  hover:text-gray-900    '>{ele.icon}</p>
+            
           ))
         }
       </div>

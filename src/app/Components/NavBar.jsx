@@ -18,7 +18,7 @@ const NavBar = () => {
         opacity: 0,
         y: -20,
         duration: 1,
-        stagger: 0.2,
+        stagger: 0.5,
       });
     }, app);
 
@@ -35,7 +35,7 @@ const NavBar = () => {
     <header ref={app} className='' >
 
       <nav className="flex flex-wrap items-center justify-between  md:py-2 md:mx-10 px-2 text-lg text-white  content-center font-bold border-b-2 ">
-        <img className='logo w-12' src='/11.png' />
+        <img className='logo h-12 text-white' src='/images/11.png' />
         <div className="block lg:hidden">
           <button
             className=" logo flex items-center px-3 py-2 border rounded  hover:text-white hover:border-white"
@@ -50,11 +50,11 @@ const NavBar = () => {
 
           <ul
             className="text-base text-white pt-4 lg:flex text-center gap-3 md:justify-between tracking-wider md:pt-2 md:px-2 uppercase font-bold" >
-            <Link onClick={() => toggleExpansion(!isExpanded)} className="logo md:p-2 block  hover:bg-white  hover:text-gray-900  rounded-lg" href="/"> Home</Link>
-            <Link onClick={() => toggleExpansion(!isExpanded)} className="logo md:p-2 block  hover:bg-white  hover:text-gray-900  rounded-lg" href="/work">Work</Link>
-            <Link onClick={() => toggleExpansion(!isExpanded)} className="logo md:p-2 block  hover:bg-white  hover:text-gray-900  rounded-lg" href="/about"> About us</Link>
-            <Link onClick={() => toggleExpansion(!isExpanded)} className="logo md:p-2 block  hover:bg-white  hover:text-gray-900  rounded-lg" href="/service">Service</Link>
-            <Link onClick={() => toggleExpansion(!isExpanded)} className="logo md:p-2 block  hover:bg-white  hover:text-gray-900  rounded-lg" href="/contact">Contact Us</Link>
+            <Link onClick={() => toggleExpansion(!isExpanded)} className="logo md:p-2 block   rounded-lg" href="/"> Home</Link>
+            <Link onClick={() => toggleExpansion(!isExpanded)} className="logo md:p-2 block   rounded-lg" href="/work">Work</Link>
+            <Link onClick={() => toggleExpansion(!isExpanded)} className="logo md:p-2 block   rounded-lg" href="/about"> About us</Link>
+            <Link onClick={() => toggleExpansion(!isExpanded)} className="logo md:p-2 block   rounded-lg" href="/service">Service</Link>
+            <Link onClick={() => toggleExpansion(!isExpanded)} className="logo md:p-2 block   rounded-lg" href="/contact">Contact Us</Link>
           </ul>
 
         </div>
