@@ -130,7 +130,7 @@ const About = () => {
                 Brand new
               </p>
               <h2 className="h1 mb-5 font-sans overflow-hidden  text-lg font-semibold  tracking-tight text-white sm:text-3xl sm:leading-none">
-              We're specializes in best website design and development services.
+              We are specializes in best website design and development services.
                 
               </h2>
               <p className="par pr-5 mb-5 text-sm text-white md:text-base">
