@@ -8,3 +8,8 @@
     overflow-x: hidden;
 
 }
+:root {
+
+    --headlineBig: clamp(4rem, 6vw, 10rem);
+    --headlineSmall: clamp(1rem, 1.2vw, 6rem);
+  }

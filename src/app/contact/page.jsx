@@ -10,7 +10,7 @@ import {BsTelephone} from 'react-icons/bs'
 
 import FadeIn from '../Components/FadeIn'
  
-gsap.registerPlugin(ScrollTrigger);
+
 const data= [
     {
         svg:  <IoLocationOutline className='h-6 w-10'/>,
@@ -33,6 +33,7 @@ const ContactUs = () => {
 
   const ref = useRef();
   useIsomorphicLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const element = ref.current;
     const tl =gsap.timeline()
     tl.from(

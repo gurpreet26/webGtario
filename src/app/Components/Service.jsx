@@ -5,49 +5,45 @@ import  gsap  from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
 
 
-gsap.registerPlugin(ScrollTrigger);
+
 
 const data =[
     {
-      name:"Popular",
-      price:"99",
-      month:"month",
-      title:"For most businesses that want to optimaize web queries.",
-      offer:"All limited links",
-      platform: " Own analytics platform",
-      contact:"chat support",
-      tags:"Optimize hashtags",
-      user:"unlimited users",
+      name:"Basic",
+      price:"$ 299",
+      title:"user-friendly websites that reflect your unique brand identity",
+      offer:"3 - 5 pages",
+      platform: " Responsive Design",
+      contact:"contact form",
+  
       plan:" Choose plan"
 
 
 
     },
     {
-        name:"Popular",
-        price:"99",
-        month:"month",
-        title:"For most businesses that want to optimaize web queries.",
-        offer:"All limited links",
-        platform: " Own analytics platform",
-        contact:"chat support",
-        tags:"Optimize hashtags",
-        user:"unlimited users",
+        name:"Reservation Booking website",
+        price:"$ 999",
+       
+        title:" managing reservations has never been this effortles this effortless",
+        offer:"Services Packages",
+        platform: " Automated notifications",
+        contact:"Calendar Synchronizations",
+   
         plan:" Choose plan"
   
   
   
       },
       {
-        name:"Popular",
-        price:"99",
-        month:"month",
-        title:"For most businesses that want to optimaize web queries.",
-        offer:"All limited links",
-        platform: " Own analytics platform",
-        contact:"chat support",
-        tags:"Optimize hashtags",
-        user:"unlimited users",
+        name:"Custom",
+        price:"$ 6999",
+    
+        title:"creating a visually stunning and immersive experience for your users",
+        offer:"Unique Design",
+        platform: "unlimited animations",
+        contact:"unlimited revision",
+     
         plan:" Choose plan"
   
   
@@ -64,6 +60,7 @@ function Service() {
   
     const app = useRef();
   useIsomorphicLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
       const ctx = gsap.context((self) => {
         const boxes = self.selector(".logo");
         boxes.forEach((box) => {
@@ -75,7 +72,8 @@ function Service() {
               trigger: box,
               start: "top 80%",
               end:"bottom 70%",
-              scrub: 4
+         
+              scrub: 2
             }
           });
         });
@@ -99,7 +97,7 @@ function Service() {
 
 
 
-      <div className=' flex flex-col  justify-center items-center md:flex-row my-5 md:w-9/12  px-5 rounded-lg gap-6 m-auto'>
+      <div className=' flex flex-col max-w-screen-xl justify-center items-center md:flex-row my-5 md:w-9/12  px-5 rounded-lg gap-6 m-auto'>
 
         {data.map((ele, index) => (
 
@@ -110,7 +108,7 @@ function Service() {
             <h4 className="mt-2 text-3xl font-semibold  text-center">
               {ele.price} <span className="text-base font-normal ">{ele.month}</span>
             </h4>
-            <p className="mt-4  text-center">
+            <p className="mt-4 text-sm text-center">
               {ele.title}
             </p>
             <div className="mt-8  space-y-8">

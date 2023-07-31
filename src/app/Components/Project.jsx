@@ -46,21 +46,20 @@ const Project = () => {
     <div className='flex-col flex justify-center items-start'>
 
 <FadeIn vars={{ y: -100 , duration:1, }}>
-    <h2 className="text-4xl font-bold tracking-tight lg:text-4xl text-white">
+    <h2 className="text-4xl font-bold tracking-tight lg:text-4xl ">
            Latest WORK
         </h2>
         </FadeIn>
         <FadeIn vars={{ y: -100 , duration:2, }}>
-        <p className="block w-full  mt-4 text  text-gray-300">
-            Lorem, ipsum dolor sit amet consectetur
-               Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Esse iure tenetur commodi ipsam error 
-            adipisicing elit. Esse iure tenetur commodi ipsam error 
+        <p className="block w-full  mt-4 text  text-gray-50">
+        Our team of seasoned designers and developers bring years of experience to the table. 
+        From ideation to execution, we ensure every aspect of your website and booking system is crafted with precision
+         and attention to detail. We focus on user experience, page speed, and mobile responsiveness to ensure your website stands out in search engines and delights your visitors
         </p>
         </FadeIn>
     </div>
   
-    <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3 overflow-hidden ">
+    <div className="grid  grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3 overflow-hidden ">
     
         {
             data.map((ele,index)=> (
@@ -74,14 +73,7 @@ const Project = () => {
         }}
       >
         
-        <div  className="w-full px-8  overflow-hidden rounded-b-lg backdrop-blur-sm bg-white ">
-          <h2 className="mt-2 text-sm text-gray-700 capitalize ">
-        {ele.title}
-          </h2>
-          <p className="my-1 text-xs font-light tracking-wider text-gray-700  uppercase  ">
-            {ele.subTitle}
-          </p>
-        </div>
+
       </div>
       </FadeIn>
             ))

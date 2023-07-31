@@ -4,6 +4,8 @@ import { useRef, useLayoutEffect ,useEffect} from 'react'
 import  gsap  from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
 import { BiLogoInstagram, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
+import FadeIn from './FadeIn';
+
 const team = [
     {
       image: "https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?w=1380&t=st=1690310699~exp=1690311299~hmac=b5b7cb7fa04f331fe869a67cafcbca43622b36cd2520dda0088d6a69f3a2efae",
@@ -63,43 +65,26 @@ const team = [
   : useEffect;
 
 const Team = () => {
-    const app = useRef();
-  useIsomorphicLayoutEffect(() => {
-      const ctx = gsap.context((self) => {
-        const boxes = self.selector(".logo");
-        boxes.forEach((box) => {
-          gsap.from(box, { 
-            x:-100,
-            stagger: 2,
-            opacity:0,
-            scrollTrigger: {
-              trigger: box,
-              start: "top 80%",
-              end:"bottom 70%",
-              scrub: 4
-            }
-          });
-        });
-      }, app);
-      return () => ctx.revert();
-    }, []);
+ 
+
 
   return (
-    <div ref={app} className="team container my-2 mx-auto md:px-6  rounded-md text-white shadow-xl w-11/12 m-auto ">
+<FadeIn vars={{x:-200}}>
+    <div className="team container my-2 mx-auto md:px-6  rounded-md text-white shadow-xl w-11/12 m-auto ">
 
     <section className="py-4 text-center">
 
-      <h2 className="my-3 text-4xl font-bold">
+      <h2 className="pb-3 text-4xl font-bold">
         Meet Your Team
       </h2>
+<p className='mb-3'>We are a small, but highly skilled team of web developers. </p>
 
-
-
+   
       <div className="grid gap-x-6 md:grid-cols-3 pt-3 lg:gap-x-12">
 
         {
           team.map((ele, index) => (
-
+<FadeIn vars={{x:200}}>
             <div key={index} className="mb-6 lg:mb-0">
               <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
                 <div className="relative overflow-hidden bg-cover bg-no-repeat">
@@ -128,15 +113,18 @@ const Team = () => {
 
 
             </div>
+            </FadeIn>
 
           ))
         }
 
       </div>
 
+
     </section>
 
   </div>
+  </FadeIn>
   )
 }
 

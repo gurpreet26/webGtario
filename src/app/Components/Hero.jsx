@@ -13,16 +13,17 @@ const useIsomorphicLayoutEffect = typeof window !== "undefined"
   : useEffect;
 
 const Hero = () => {
-  gsap.registerPlugin(ScrollTrigger);
+
   const router = useRouter()
   const app = useRef();
 
   useIsomorphicLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     let tl = gsap.timeline();
     let ctx = gsap.context(() => {
       tl.from(".logo, .logo1, .logo2", {
         y: -200,
-        opacity: 0.5,
+        opacity: 0,
         duration: 1.5,
         stagger: .5,
        
@@ -48,7 +49,7 @@ const Hero = () => {
   return (
 
     <>
-      <div ref={app} className="px-4 py-8  bg-gray-900 shadow-lg  ">
+      <div ref={app} className="px-4 py-8 w-11/12 m-auto rounded-md bg-gray-900 shadow-lg  ">
         <div className="flex gap-8 sm:gap-0 sm:justify-around flex-col sm:flex-row">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
@@ -96,18 +97,17 @@ const Hero = () => {
               </svg>
 
             </div>
-            <div className="max-w-xl mb-6">
+            <div className="max-w-xl  mb-6">
 
-              <h2 className="logo max-w-lg mb-6 overflow-hidden font-sans text-3xl font-bold tracking-tight text-white  sm:text-4xl sm:leading-none">
-                Let us handle
-                <br/>
-                your next destination
+              <h2 className="logo max-w-lg mb-6 overflow-hidden font-sans text-3xl font-bold tracking-tight text-white  sm:text-3xl sm:leading-none">
+              Welcome to one of the Best Website Design Agency in Canada
               </h2>
 
-              <p className="logo text-base text-white md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae. explicabo.
+              <p className="logo text-sm text-white md:text-base whitespace-normal">
+              We combine creativity, innovation, and industry best practices to deliver websites that set you apart from the competition.
+              Choose MOGA STUDIO for best website design, custom web solutions, and reservation 
+              booking systems that embody the Canadian values of quality, innovation, and integrity. Let us take your online presence to new heights.
+             
               </p>
 
             </div>

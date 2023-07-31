@@ -87,12 +87,13 @@ const data1 =[
 
 ]
 
-    gsap.registerPlugin(ScrollTrigger);
+
 
 
 
 const ScrollTriggerDirectionalMovement = () => {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     document.scrollingElement.scrollTo(0, 0);
     handleScroll();
     return () => {};

@@ -29,7 +29,7 @@ const Contact = () => {
     return (
         <section className="bg-gray-900 w-11/12 m-auto rounded-xl ">
          
-         <FadeIn vars={{ x: -300 ,duration:1.5 }}>
+         <FadeIn vars={{ x: -200 ,duration:1 }}>
                 <div className='text-center pt-3'>
                     <p className="font-medium text-blue-400">Contact us</p>
                     <h1 className="mt-2 text-2xl font-semibold text-white md:text-3xltext-white">

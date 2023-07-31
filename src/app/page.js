@@ -6,6 +6,7 @@ import Service from './Components/Service'
 import Project from './Components/Project'
 import Cta from './Components/Cta'
 import Contact from './Components/Contact'
+import TextReveal from './Components/TextReval'
 
 export default function Home() {
   return (
@@ -15,14 +16,13 @@ export default function Home() {
 
  
 
- <Hero/>
+  <Hero/>
   {/* <Stats/> */}
-
+  
+  <VideoSection/>
+  <TextReveal/>
 <Service/>
-<VideoSection/>
 <Project/>
-
-
 
 
 <Contact/>

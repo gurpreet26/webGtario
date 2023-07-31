@@ -25,7 +25,7 @@ const page = () => {
                Basic Website
               </th>
               <th scope="col" className="px-6 py-4">
-                E-Commerce
+               Reversation booking website
               </th>
               <th scope="col" className="px-6 py-4">
                Custom Website
@@ -42,8 +42,8 @@ const page = () => {
 
             <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
               <td className="whitespace-nowrap px-6 py-4 font-medium">Revision</td>
-              <td className="whitespace-nowrap px-6 py-4">4 Rounds </td>
-              <td className="whitespace-nowrap px-6 py-4">10 Rounds</td>
+              <td className="whitespace-nowrap px-6 py-4">3 Rounds </td>
+              <td className="whitespace-nowrap px-6 py-4">6 Rounds</td>
               <td className="whitespace-nowrap px-6 py-4">unlimited</td>
             </tr>
             <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
@@ -70,12 +70,6 @@ const page = () => {
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
             </tr>
-        
-         
-       
-         
-      
-         
           </tbody>
         </table>
       </div>
