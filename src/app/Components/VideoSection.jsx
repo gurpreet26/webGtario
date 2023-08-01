@@ -17,12 +17,12 @@ const VideoSection = () => {
   return (
 
 <>
-<FadeIn vars={{transform:"translateX(100%)"}}>
-<div className='page1 hidden lg:block h-[24rem] overflow-hidden w-screen bg-black  relative'>
-<video className=" h-full w-screen object-cover" src="/earth.mp4" muted autoPlay loop></video>
+<FadeIn vars={{transform:"translateX(100%)" ,duration:3}}>
+<div className='page1 hidden lg:block h-[24rem] overflow-hidden select-none w-screen bg-black  relative'>
+<video className=" h-full w-screen object-cover select-none" src="/earth.mp4" muted autoPlay loop></video>
   <div className='w-full h-full  lg:whitespace-nowrap absolute bg-black select-none mix-blend-multiply top-0 '>
   <span className={bebas.className}>
-<h1 className='h1  text-white ml-3 md:text-[18vw] w-screen tracking-[-.02rem] font-bold'>CREATIVE CANADA</h1>
+<h1 className='h1  text-white ml-3 md:text-[16vw] w-screen tracking-[1rem] select-none font-bold'>WEB CREATIVE</h1>
 </span>
 
   </div>

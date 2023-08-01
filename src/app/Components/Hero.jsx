@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
 import { useRef, useLayoutEffect, useEffect } from 'react'
+import {BsAwardFill} from 'react-icons/bs'
 
 
 
@@ -24,8 +25,8 @@ const Hero = () => {
       tl.from(".logo, .logo1, .logo2", {
         y: -200,
         opacity: 0,
-        duration: 1.5,
-        stagger: .5,
+        duration: 1,
+        stagger: 1,
        
       });
 
@@ -52,62 +53,20 @@ const Hero = () => {
       <div ref={app} className="px-4 py-8 w-11/12 m-auto rounded-md bg-gray-900 shadow-lg  ">
         <div className="flex gap-8 sm:gap-0 sm:justify-around flex-col sm:flex-row">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
-            <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
+            <div className="mb-4 ">
             
-              <svg className="logo text-white w-7 h-7" viewBox="0 0 24 24">
-                <polyline
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeMiterlimit="10"
-                  points=" 8,5 8,1 16,1 16,5"
-                  strokeLinejoin="round"
-                />
-                <polyline
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeMiterlimit="10"
-                  points="9,15 1,15 1,5 23,5 23,15 15,15"
-                  strokeLinejoin="round"
-                />
-                <polyline
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeMiterlimit="10"
-                  points="22,18 22,23 2,23 2,18"
-                  strokeLinejoin="round"
-                />
-                <rect
-                  x="9"
-                  y="13"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeMiterlimit="10"
-                  width="6"
-                  height="4"
-                  strokeLinejoin="round"
-                />
-              </svg>
+       <BsAwardFill className='logo text-white h-12 w-16'/>
 
             </div>
             <div className="max-w-xl  mb-6">
 
-              <h2 className="logo max-w-lg mb-6 overflow-hidden font-sans text-3xl font-bold tracking-tight text-white  sm:text-3xl sm:leading-none">
-              Welcome to one of the Best Website Design Agency in Canada
+              <h2 className="logo max-w-lg mb-6 overflow-hidden font-sans text-3xl font-bold tracking-tight text-white  sm:text-4xl sm:leading-none">
+            One of the Best Website Design and Development Agency in Canada
               </h2>
 
               <p className="logo text-sm text-white md:text-base whitespace-normal">
               We combine creativity, innovation, and industry best practices to deliver websites that set you apart from the competition.
-              Choose MOGA STUDIO for best website design, custom web solutions, and reservation 
-              booking systems that embody the Canadian values of quality, innovation, and integrity. Let us take your online presence to new heights.
-             
+              With our expertise in best website design practices, custom web solutions, and robust booking systems, we empower businesses to thrive in the digital landscape.
               </p>
 
             </div>

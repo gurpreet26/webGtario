@@ -11,29 +11,30 @@ import { BiLogoInstagram, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
 import { useRouter } from 'next/navigation'
 import FadeIn from '../Components/FadeIn'
 import Team from '../Components/Team';
+import TextReveal from '../Components/TextReval';
 const stats = [
   {
     icon: <IoCodeWorking/>,
-    unit: "30+",
+    unit: "20+",
     title: "Projects",
     message: "Its something thats many of the wisest people in history have kept in mind"
   },
   {
     icon: <AiOutlineUsergroupAdd />,
-    unit: "30+",
-    title: "Projects",
+    unit: "15+",
+    title: "Customser",
     message: "Its something thats many of the wisest people in history have kept in mind"
   },
   {
     icon: <AiOutlineCloudDownload />,
-    unit: "30+",
-    title: "Projects",
+    unit: "5+",
+    title: "Mobile Apps",
     message: "Its something thats many of the wisest people in history have kept in mind"
   },
   {
     icon: <CgWebsite />,
-    unit: "30+",
-    title: "Projects",
+    unit: "40+",
+    title: "SEO",
     message: "Its something thats many of the wisest people in history have kept in mind"
   },
 ]
@@ -75,7 +76,7 @@ const About = () => {
   const app = useRef();
 
 
-
+ const t2="As an Ontario-based web design agency, we take immense pride in creating websites that embody the essence of this beautiful province. Our agency is dedicated to delivering top-notch website design solutions that showcase the best of your brand and captivate your audience"
   useIsomorphicLayoutEffect(() => {
 
     gsap.registerPlugin(ScrollTrigger);
@@ -106,7 +107,9 @@ const About = () => {
   }, []);
 
   return (
+    
     < div ref={app} className=''>
+
       <div className='w-11/12  bg-gray-900 shadow-2xl m-auto mb-2  '>
         <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 shadow-lg">
           <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
@@ -155,7 +158,7 @@ const About = () => {
 
 
 
-
+ 
 
       {/* stats */}
       <div className="px-4 py-16 shadow-lg mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -186,6 +189,7 @@ const About = () => {
         </div>
 
       </div>
+  
       {/* steps */}
       <FadeIn vars={{ y: -100 }}>
       <div className="overflow-hidden px-4 py-16 shadow-lg mx-auto sm:max-w-xl rounded-md bg-gray-900 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -200,8 +204,7 @@ const About = () => {
             How  we make your website
           </h2>
           <p className="text-base text-gray-300 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+          We leverage the latest technologies and design trends to create websites that make a lasting impact and keep your audience coming back for more
           </p>
         </div>
 
@@ -243,7 +246,7 @@ const About = () => {
         </div>
       </div>
      </FadeIn>
-    
+     <TextReveal title={t2}/>
    <Team/>
 
       {/* faq */}

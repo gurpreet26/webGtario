@@ -7,13 +7,13 @@ const data = [
     {
         icon: <MdOutlineMail/>,
         name: " Email",
-        message: "Speak to our friendly team.",
+        message: "Email to get the quick quote.",
         contact: " hello@mogastudio.com"
     },
     {
         icon:<BsTelephone/> ,
         name: "Phone",
-        message: "Speak to our friendly team.",
+        message: "Call us today",
         contact: "+1 226 402 0355"
     },
     {
@@ -43,7 +43,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 gap-12 mt-10 sm:grid-cols-2 lg:grid-cols-3 p-4">
             
                     {data.map((ele, index) => (
-                        <FadeIn key={index} vars={{ x: -100 ,duration:1 }}>
+                        <FadeIn key={index} vars={{ x: 100 ,duration:1 }}>
                         <div  className="p-4 rounded-lg  md:p-6 bg-gray-800">
 
                             <span className="inline-block p-3 text-blue-400 rounded-lg bg-gray-900">

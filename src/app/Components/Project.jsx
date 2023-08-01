@@ -63,7 +63,8 @@ const Project = () => {
     
         {
             data.map((ele,index)=> (
-<FadeIn   key={index} vars={{ y: 100 , duration:3, stagger:0.4 }}>
+
+<FadeIn   key={index} vars={{ x: -200 , duration:3, stagger:0.4 }}>
                   <div
                 
         className="flex items-end overflow-hidden bg-cover bg-no-repeat rounded-lg h-64 hover:skew-y-3"

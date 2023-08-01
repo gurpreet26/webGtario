@@ -37,13 +37,12 @@ const ContactUs = () => {
     const element = ref.current;
     const tl =gsap.timeline()
     tl.from(
-      element.querySelector(".image"),
+      element.querySelector(".im"),
       {
-        opacity: 0.3,
-       duration:3,
-       delay:.3,
-       stagger:2,
-       height: "70rem",
+        opacity: 0,
+        duration:3,
+        stagger:2,
+     x:-200
       }
     );
     tl.from(
@@ -75,18 +74,27 @@ const ContactUs = () => {
    
     }, []);
   return (
-  
+    <>
+
+ 
+ 
     
   <section ref={ref} className="first bg-gray-900 w-11/12 m-auto">
 
 
 
 
-<img
-  className="image object-cover w-full h-64 rounded-lg mt-1 lg:h-96"
-  src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=100"
-  alt=""
-/>
+  <div className='im md:flex'>
+    <img className=" hidden lg:block w-auto  m-auto"
+    src="./images/seo1.png"
+    alt="cc"/>
+    
+    <img
+    className=" w-auto m-auto"
+    src="./images/about.png"
+    alt="cc"
+  />
+    </div>
 
 
 <div className=' w-full m-auto shadow-lg'>
@@ -186,7 +194,7 @@ const ContactUs = () => {
 
 
 </section>
-   
+</>
   
   )
 }

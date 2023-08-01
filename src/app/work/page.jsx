@@ -151,8 +151,8 @@ const ScrollTriggerDirectionalMovement = () => {
         </section>
       ))}
       <section className="h-fit">
-        <div className="wrapper flex md:text-[16vh] text-white font-medium overflow whitespace-nowrap">
-          We Make beautiful mind set
+        <div className="wrapper flex md:text-[18vh] text-white font-medium overflow whitespace-nowrap">
+        Bringing Your Website to Life
         </div>
       </section>
       {data1.map((el,index) => (
@@ -161,7 +161,7 @@ const ScrollTriggerDirectionalMovement = () => {
             {data.map((el2,index) => (
               <img
                 key={index}
-                className="h-80 rounded-xl m-2 transition-all hover:scale-95 cursor-pointer "
+                className="h-80 rounded-xl m-2  w-screen transition-all hover:scale-110 cursor-pointer "
                 src={el2.image}
               />
             ))}

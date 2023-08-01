@@ -8,6 +8,7 @@ import Cta from './Components/Cta'
 import Contact from './Components/Contact'
 import TextReveal from './Components/TextReval'
 
+  const t= "Our Team are passionate about bringing your ideas to life. We collaborate closely with you to understand your vision, goals, and target audience, creating a website that reflects your brand's personality and captures the essence of your business"
 export default function Home() {
   return (
   <div className='bg-slate-950 p-0 m-0' >
@@ -20,7 +21,7 @@ export default function Home() {
   {/* <Stats/> */}
   
   <VideoSection/>
-  <TextReveal/>
+  <TextReveal title={t}/>
 <Service/>
 <Project/>
 

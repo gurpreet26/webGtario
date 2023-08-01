@@ -3,11 +3,22 @@ import Service from '../Components/Service'
 import {TiTick} from 'react-icons/ti'
 import {RxCross2} from 'react-icons/rx'
 import Cta from '../Components/Cta'
+import FadeIn from '../Components/FadeIn'
 
 const page = () => {
   return (
    <>
-   <Cta/>
+
+<FadeIn vars={{y:200}}>
+    <div className='lg:flex  bg-black'>
+
+   
+
+    <img className='bg-cover m-auto h-96 rounded-lg w-auto ' src='./images/seo.png'/>
+    
+    </div>
+
+    </FadeIn>
    <Service/>
 
 

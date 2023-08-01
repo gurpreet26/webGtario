@@ -3,7 +3,7 @@ import React from 'react'
 import { useRef, useLayoutEffect ,useEffect} from 'react'
 import  gsap  from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
-
+import FadeIn from './FadeIn'
 
 
 
@@ -11,43 +11,29 @@ const data =[
     {
       name:"Basic",
       price:"$ 299",
-      title:"user-friendly websites that reflect your unique brand identity",
+      title:"user-friendly and responsive websites that reflect  your unique brand identity",
       offer:"3 - 5 pages",
       platform: " Responsive Design",
-      contact:"contact form",
-  
+      contact:"Contact form",
       plan:" Choose plan"
-
-
-
     },
     {
         name:"Reservation Booking website",
-        price:"$ 999",
-       
-        title:" managing reservations has never been this effortles this effortless",
+        price:"$ 999",  
+        title:"Efficiently manage bookings and reservations with our advanced  booking systems",
         offer:"Services Packages",
         platform: " Automated notifications",
         contact:"Calendar Synchronizations",
-   
         plan:" Choose plan"
-  
-  
-  
       },
       {
         name:"Custom",
         price:"$ 6999",
-    
-        title:"creating a visually stunning and immersive experience for your users",
+        title:"Experience the magic of scroll effects that take your website to new heights",
         offer:"Unique Design",
         platform: "unlimited animations",
         contact:"unlimited revision",
-     
         plan:" Choose plan"
-  
-  
-  
       },
     
     
@@ -58,31 +44,10 @@ const data =[
 
 function Service() {
   
-    const app = useRef();
-  useIsomorphicLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-      const ctx = gsap.context((self) => {
-        const boxes = self.selector(".logo");
-        boxes.forEach((box) => {
-          gsap.from(box, { 
-            x:-100,
-            stagger: 2,
-            opacity:0,
-            scrollTrigger: {
-              trigger: box,
-              start: "top 80%",
-              end:"bottom 70%",
-         
-              scrub: 2
-            }
-          });
-        });
-      }, app);
-      return () => ctx.revert();
-    }, []);
-  return (
-    <div ref={app} className=' py-8   shadow-lg mt-2 w-11/12 m-auto rounded-xl'>
 
+  return (
+    <div className=' py-8   shadow-lg mt-2 w-11/12 m-auto rounded-xl'>
+ <FadeIn vars={{ y: 100 ,duration:0.3 }}>
       <div className="container px-6 pt-1 pb-1 mx-auto text-center">
         <div className="max-w-xl mx-auto text-white">
 
@@ -94,14 +59,15 @@ function Service() {
 
 
       </div>
+      </FadeIn>
 
 
 
       <div className=' flex flex-col max-w-screen-xl justify-center items-center md:flex-row my-5 md:w-9/12  px-5 rounded-lg gap-6 m-auto'>
 
         {data.map((ele, index) => (
-
-          <div key={index} className="logo px-2 py-4 my-6 pb-8 transition-colors duration-300 text-white transform  bg-gray-900 rounded-lg dark:bg-gray-800">
+ <FadeIn key={index} vars={{ y:-100 ,duration:1 }}>
+          <div  className="overflow-hidden px-2 py-4 my-6 pb-8 transition-colors duration-300 text-white transform  bg-gray-900 rounded-lg dark:bg-gray-800">
 
 
             <p className="text-lg font-medium  text-center">{ele.name}</p>
@@ -161,6 +127,7 @@ function Service() {
               {ele.plan}
             </button>
           </div>
+          </FadeIn>
 
         ))}
       </div>

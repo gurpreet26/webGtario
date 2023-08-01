@@ -40,11 +40,11 @@ const Cta = () => {
    
  
   <div ref={ref} >
-      <div className="image my-2 relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('https://cdn.pixabay.com/photo/2018/01/21/10/02/shaking-hands-3096229_1280.jpg')] h-96">
+      <div className="image my-2 relative overflow-hidden bg-cover bg-no-repeat bg-[50%] bg-[url('https://cdn.pixabay.com/photo/2021/12/28/01/07/website-6898411_1280.png')] h-96">
         <div className=" absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden  bg-fixed">
           <div className="flex h-full items-center justify-center">
          
-            <div className="text px-6 text-center text-gray-500 md:px-12">
+            <div className="text px-6 text-center md:px-12">
               <h2 className="mb-12 text-5xl font-bold leading-tight tracking-tight">
                 Are you ready <br />
                 <span>for an Web adventure</span>
