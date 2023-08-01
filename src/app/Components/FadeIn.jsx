@@ -1,16 +1,20 @@
 "use client"
-import { useRef,useLayoutEffect } from "react";
+import { useRef,useLayoutEffect,useEffect } from "react";
 import  gsap  from "gsap";
 import { Animation } from "gsap/gsap-core";
+
+
+const useIsomorphicLayoutEffect = typeof window !== "undefined"
+  ? useLayoutEffect
+  : useEffect;
 
 const FadeIn = ({ children, vars })=>{
     const el = useRef();
     
-    useLayoutEffect(() => {
+    useIsomorphicLayoutEffect(() => {
       const ctx = gsap.context(() => {
     
         Animation.current = gsap.from(el.current.children, { 
-           
             opacity:0,
             duration: 2,
             stagger:1,

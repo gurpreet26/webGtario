@@ -11,15 +11,13 @@ const page = () => {
 
 <FadeIn vars={{y:200}}>
     <div className='lg:flex  bg-black'>
-
-   
-
     <img className='bg-cover m-auto h-96 rounded-lg w-auto ' src='./images/seo.png'/>
-    
     </div>
-
     </FadeIn>
-   <Service/>
+  
+    <Service/>
+
+
 
 
    <div className="flex flex-col text-white  bg-gray-900 rounded-lg w-11/12 m-auto">
@@ -48,7 +46,7 @@ const page = () => {
               <td className="whitespace-nowrap px-6 py-4 font-medium">No of Pages</td>
               <td className="whitespace-nowrap px-6 py-4">3-5 pages</td>
               <td className="whitespace-nowrap px-6 py-4">10-12 pages</td>
-              <td className="whitespace-nowrap px-6 py-4">unlimited pages</td>
+              <td className="whitespace-nowrap px-6 py-4">20-25 pages</td>
             </tr>
 
             <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
