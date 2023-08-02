@@ -1,9 +1,6 @@
-"use client"
+
 import React from 'react'
 import { Bebas_Neue } from 'next/font/google'
-import { useRef, useLayoutEffect ,useEffect} from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/all';
 import FadeIn from './FadeIn'
 
 

@@ -1,8 +1,6 @@
-"use client"
+
 import React from 'react'
-import { useRef, useLayoutEffect ,useEffect} from 'react'
-import  gsap  from 'gsap'
-import { ScrollTrigger } from 'gsap/all';
+
 import {BiLogoInstagram,BiLogoGithub,BiLogoLinkedin,BiLogoTiktok} from 'react-icons/bi'
 import { MdOutlineMail } from 'react-icons/md'
 import {IoLocationOutline} from 'react-icons/io5'
@@ -25,75 +23,31 @@ const data= [
         name:"+1 (226) 402 0355"
     },
 ]
-const useIsomorphicLayoutEffect = typeof window !== "undefined" 
-? useLayoutEffect 
-: useEffect;
+
 
 const ContactUs = () => {
 
-  const ref = useRef();
-  useIsomorphicLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    const element = ref.current;
-    const tl =gsap.timeline()
-    tl.from(
-      element.querySelector(".im"),
-      {
-        opacity: 0,
-        duration:3,
-        stagger:2,
-     x:-200
-      }
-    );
-    tl.from(
-      element.querySelector(".top"),
-      {
-        opacity: 0.3,
-       duration:1,
-       y:-200
-      }
-    )
-    tl.from(
-      element.querySelector(".left"),
-      {
-        opacity: 0,
-       duration:1,
-        stagger:.3,
-       x:-200,
-   
-      }
-    )
-    tl.from(
-      element.querySelector(".right"),
-      {
-        opacity: 0,
-       duration:1,
-       x:200,
-      }
-    )
-   
-    }, []);
+
   return (
     <>
-
- 
- 
     
-  <section ref={ref} className="first bg-gray-900 w-11/12 m-auto">
+  <section  className="bg-gray-900 w-11/12 m-auto">
 
 
 
+  <div className='md:flex justify-around'>
 
-  <div className='im md:flex'>
-    <img className=" hidden lg:block w-auto  m-auto"
+<FadeIn vars={{height:"40rem", y:-100}}>
+    <img className="hidden lg:block w-auto  m-auto"
     src="./images/seo1.png"
     alt="cc"/>
-    
+    </FadeIn>
+    <FadeIn vars={{height:"40rem",y:-100}}>
     <img
     className=" w-auto m-auto"
     src="./images/about.png"
     alt="cc"
-  />
+  /></FadeIn>
     </div>
 
 

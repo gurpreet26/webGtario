@@ -1,8 +1,5 @@
-"use client"
+
 import React from 'react'
-import { useRef, useLayoutEffect ,useEffect} from 'react'
-import  gsap  from 'gsap'
-import { ScrollTrigger } from 'gsap/all';
 import { BiLogoInstagram, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
 import FadeIn from './FadeIn';
 

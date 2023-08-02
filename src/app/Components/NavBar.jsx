@@ -26,9 +26,6 @@ const NavBar = () => {
 
     return () => ctx.revert();
   }, []);
-
-
-
   return (
 
 
@@ -36,14 +33,14 @@ const NavBar = () => {
 
     <header ref={app} className='' >
 
-      <nav className="flex flex-wrap items-center justify-between  md:py-2 md:mx-10 px-2 text-lg text-white  content-center font-bold border-b-2 ">
-        <img className='logo h-8 lg:h-12 text-white' src='/images/11.png' />
+      <nav className="flex flex-wrap items-center justify-between  md:py-2 md:mx-10 px-1 text-lg text-white  content-center font-bold border-b-2 ">
+        <img className='logo h-9 lg:h-12 text-white' src='/images/11.png' />
         <div className="block xl:hidden">
           <button
-            className=" logo flex items-center px-3 py-2 hover:text-white hover:border-white"
+            className=" logo flex items-center py-2 hover:text-white hover:border-white"
             onClick={() => toggleExpansion(!isExpanded)}
           >
-            {isExpanded ? <AiOutlineClose /> : <RiMenu3Line />}
+            {isExpanded ? <AiOutlineClose className='h-8 w-12' /> : <RiMenu3Line className='h-8 w-10'/>}
           </button>
         </div>
 

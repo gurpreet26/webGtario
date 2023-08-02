@@ -1,8 +1,6 @@
-"use client"
+
 import React from 'react'
-import { useRef, useLayoutEffect ,useEffect} from 'react'
-import  gsap  from 'gsap'
-import { ScrollTrigger } from 'gsap/all';
+
 import FadeIn from './FadeIn'
 
 
@@ -38,9 +36,6 @@ const data =[
     
     
   ]
-  const useIsomorphicLayoutEffect = typeof window !== "undefined" 
-  ? useLayoutEffect 
-  : useEffect;
 
 function Service() {
   
