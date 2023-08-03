@@ -66,49 +66,18 @@ const steps = [
 
 
 
-const useIsomorphicLayoutEffect = typeof window !== "undefined"
-  ? useLayoutEffect
-  : useEffect;
 
 
 const About = () => {
-  const router = useRouter()
-  const app = useRef();
+
 
 
  const t2="As an Ontario-based web design agency, we take immense pride in creating websites that embody the essence of this beautiful province. Our agency is dedicated to delivering top-notch website design solutions that showcase the best of your brand and captivate your audience"
-  useIsomorphicLayoutEffect(() => {
 
-    gsap.registerPlugin(ScrollTrigger);
-      const tl = gsap.timeline()
-
-
-    const ctx = gsap.context((self) => {
-
-     tl.from(".h1, .par", {
-        x: -200,
-      
-        opacity: 0,
-        duration:.3,
-        stagger: 0.3,
-       
-      });
-      tl.from(".img1", {
-        opacity: 0,
-        duration:2,
-      height:"200vh"
-       
-      });
-
-
-
-    }, app);
-    return () => ctx.revert();
-  }, []);
 
   return (
     
-    < div ref={app} className=''>
+    < div  className=''>
 
       <div className='w-11/12  bg-gray-900 shadow-2xl m-auto mb-2  '>
         <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 shadow-lg">

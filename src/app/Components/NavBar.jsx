@@ -69,11 +69,35 @@ const NavBar = () => {
 
         </div>
 
+        {/* <div className={`${isExpanded ? `block` : `hidden`
+          } w-full block  xl:flex xl:items-center xl:w-auto`}>
 
-        <button className="logo hidden ml-8 whitespace-nowrap xl:inline-flex items-center justify-center px-8 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-500  hover:text-blue-500 hover:bg-white "
+          <ul
+            className="text-base text-white pt-4 xl:flex text-center gap-3 md:justify-between tracking-wider md:pt-2 md:px-2 uppercase font-bold" >
+            <li className="logo pb-2 text-xl text-white py-2 md:px-6 text-center border-b lg:border-b-0 "> 
+              <Link onClick={() => toggleExpansion(!isExpanded)} href="/"> Home</Link>
+            </li>
+            <li className="logo pb-2 text-xl text-white py-2 md:px-6 text-center border-b lg:border-b-0">
+              <Link onClick={() => toggleExpansion(!isExpanded)}  href="/work">Work</Link>
+            </li>
+            <li className="logo pb-2 text-xl text-white py-2 md:px-6 text-center border-b lg:border-b-0">
+              <Link onClick={() => toggleExpansion(!isExpanded)}  href="/about"> About us</Link>
+            </li>
+            <li className="logo pb-2 text-xl text-white py-2 md:px-6 text-center border-b lg:border-b-0">
+              <Link onClick={() => toggleExpansion(!isExpanded)} href="/service">Service</Link>
+            </li>
+            <li className="logo pb-2 text-xl text-white py-2 md:px-6 text-center  lg:border-b-0">
+              <Link onClick={() => toggleExpansion(!isExpanded)} href="/contact">Contact Us</Link>
+            </li>
+
+          </ul>
+
+        </div> */}
+
+        {/* <button className="logo hidden ml-8 whitespace-nowrap xl:inline-flex items-center justify-center px-8 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-500  hover:text-blue-500 hover:bg-white "
           type="button" onClick={() => router.push('/contact')}>
           Get Quote
-        </button>
+        </button> */}
 
       </nav>
     </header>

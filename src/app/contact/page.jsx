@@ -37,12 +37,12 @@ const ContactUs = () => {
 
   <div className='md:flex justify-around'>
 
-<FadeIn vars={{height:"40rem", y:-100}}>
+<FadeIn vars={{ y:-200 ,duration:2}}>
     <img className="hidden lg:block w-auto  m-auto"
     src="./images/seo1.png"
     alt="cc"/>
     </FadeIn>
-    <FadeIn vars={{height:"40rem",y:-100}}>
+    <FadeIn vars={{y:-200 ,duration:2}}>
     <img
     className=" w-auto m-auto"
     src="./images/about.png"

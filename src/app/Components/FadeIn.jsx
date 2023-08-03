@@ -2,6 +2,7 @@
 import { useRef,useLayoutEffect,useEffect } from "react";
 import  gsap  from "gsap";
 import { Animation } from "gsap/gsap-core";
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 
 const useIsomorphicLayoutEffect = typeof window !== "undefined"
@@ -13,7 +14,7 @@ const FadeIn = ({ children, vars })=>{
     
     useIsomorphicLayoutEffect(() => {
       const ctx = gsap.context(() => {
-    
+        gsap.registerPlugin(ScrollTrigger);
         Animation.current = gsap.from(el.current.children, { 
             opacity:0,
             duration: 2,

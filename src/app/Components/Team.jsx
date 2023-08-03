@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { BiLogoInstagram, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
 import FadeIn from './FadeIn';
@@ -57,9 +56,7 @@ const team = [
   
   ]
 
-  const useIsomorphicLayoutEffect = typeof window !== "undefined" 
-  ? useLayoutEffect 
-  : useEffect;
+
 
 const Team = () => {
  
