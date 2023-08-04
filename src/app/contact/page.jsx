@@ -39,22 +39,6 @@ const ContactUs = () => {
   const[result , showresult] =useState(false);
   const form =useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm('service_ws5ovai', 'template_yq1a06d', form.current, 'LLqzyd8XJeH13Rh5m')
-  //   .then((result) => {
-      
-  // }, (error) => {
-  //     console.log(error.text);
-  // });
-  // e.target.reset()
-  // showresult(true)
-  // setTimeout(() => showresult(false), 3000);
-     
-  // };
-
-
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -76,7 +60,7 @@ const ContactUs = () => {
   <section  className="bg-gray-900 w-11/12 m-auto">
 
 
-  <FadeIn vars={{ y:-200 }}>
+ 
   <div className='md:flex justify-around'>
 
 
@@ -91,12 +75,13 @@ const ContactUs = () => {
     alt="cc"
   />
     </div>
-    </FadeIn>
+    
 </section>
 
 <div className='text-center py-5 '>
+  <FadeIn vars={{y:-200}}>
 <h1 className="font-medium text-4xl text-white ">Contact us</h1>
-
+</FadeIn>
 </div>
 
 <div className='text-white flex flex-col md:flex-row justify-center items-center '>
@@ -104,13 +89,22 @@ const ContactUs = () => {
     
   <div className="mt-2  space-y-8 md:mt-8  self-start">
         {
+            
             data.map((ele, index) =>(
+              
+            
                 <div key={index} className="flex items-start text-white mx-1">
+                 
               <div className="mx-2  truncate w-12 ">{ele.svg} </div>
+             
+         
                    <p className="mx-2  truncate w-72 ">
                    {ele.name}
                    </p>
+                  
+                  
                  </div>
+           
             ))
         }
    
@@ -118,7 +112,10 @@ const ContactUs = () => {
   
     
     <div className=" text-center md:text-left w-80 md:mt-8 self-start ">
+    <FadeIn vars={{y:-200}}>
       <h3 className="text-white ">Follow us</h3>
+      </FadeIn>
+      <FadeIn vars={{y:-200}}>
       <div className="flex md:items-left justify-center md:justify-start mt-4 text-center gap-4 text-white ">
     
         <BiLogoGithub className='h-10 w-8  text-center'/>
@@ -126,6 +123,7 @@ const ContactUs = () => {
              <BiLogoInstagram className='h-10 w-8 '/>
              <BiLogoTiktok  className='h-10 w-8 '/>
       </div>
+      </FadeIn>
     </div>
 
   </div>

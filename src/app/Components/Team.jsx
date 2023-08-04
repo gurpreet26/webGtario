@@ -84,7 +84,7 @@ const Team = () => {
                 <div className="relative overflow-hidden bg-cover bg-no-repeat">
                   <img
                     src={ele.image}
-                    className="w-full rounded-t-lg h-[22rem]"
+                    className="w-full rounded-t-lg h-[15rem] lg:h-[19rem]"
                   />
                   <a href="#!">
                     <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed" />
