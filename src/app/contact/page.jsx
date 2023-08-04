@@ -59,7 +59,7 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.NEXT_PUBLIC_service_id, process.env.NEXT_PUBLIC_template_id , form.current, process.env.NEXT_PUBLIC_public_key)
+    emailjs.sendForm(process.env.service_id, process.env.template_id , form.current, process.env.public_key)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
