@@ -19,6 +19,7 @@ const Hero = () => {
   src='/images/profile1.png'
   width={500}
   height={100}
+  alt='dpp'
   />
 </div>
 

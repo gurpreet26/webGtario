@@ -40,6 +40,7 @@ const NavBar = () => {
             className=" logo flex items-center py-2 hover:text-white hover:border-white"
             onClick={() => toggleExpansion(!isExpanded)}
             role="button"
+            aria-label="Aria Name"
           >
             {isExpanded ? <AiOutlineClose className='h-8 w-12' /> : <RiMenu3Line className='h-8 w-10'/>}
           </button>

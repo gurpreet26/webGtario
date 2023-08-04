@@ -26,7 +26,12 @@ const Footer = () => {
       <div className="container flex flex-col items-center justify-between  py-2 lg:pt-6 lg:flex-row">
 
     
-        <Link className="text-base lg:text-xl text-white transition-colors duration-300   rounded-lg  px-8 " href="/" aria-hidden="true">
+        <Link className="text-base lg:text-xl text-white transition-colors duration-300   rounded-lg  px-8 " 
+        href="/" 
+        aria-hidden="true"
+        disabled
+        >
+         
         <img className='logo h-9 lg:h-12 text-white' src='/images/logo.png' />
           </Link>
        
