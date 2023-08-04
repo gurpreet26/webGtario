@@ -1,16 +1,21 @@
 
 import React from 'react'
-
 import { IoCodeWorking } from 'react-icons/io5'
 import { AiOutlineUsergroupAdd } from 'react-icons/ai'
 import { AiOutlineCloudDownload } from 'react-icons/ai'
 import { CgWebsite } from 'react-icons/cg'
-
 import FadeIn from '../Components/FadeIn'
 import Team from '../Components/Team';
 import Me from '../Components/Me';
 import TextReveal from '../Components/TextReval';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Professional Website Design & Development Services | design and development of mobile app like IOS Apps and android apps across canada',
+  description: ' Looking for innovative web design or mobile apps in hamiton? Our expertise extends to both iOS and Android platforms. Whether you are targeting iPhone users or the vast Android market, we will build a seamless app experience for your target audience.',
+}
+
+
 const stats = [
   {
     icon: <IoCodeWorking/>,

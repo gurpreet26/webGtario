@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Head from 'next/head';
 
 
+
 const data =[
     {
         image:"/images/1.jpg"

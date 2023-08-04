@@ -1,20 +1,15 @@
-
 import React from 'react'
-
-
-
 import Image from 'next/image';
 
-
+export const metadata = {
+  title: 'Create hero page',
+  description: 'hero page',
+}
 
 
 const Hero = () => {
 
-
-
   return (
-
-
 <>
 <div className='md:h-[530px] flex flex-col md:flex-row md:justify-around items-center'>
 

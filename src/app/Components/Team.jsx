@@ -4,7 +4,7 @@ import FadeIn from './FadeIn';
 
 const team = [
     {
-      image: "https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?w=1380&t=st=1690310699~exp=1690311299~hmac=b5b7cb7fa04f331fe869a67cafcbca43622b36cd2520dda0088d6a69f3a2efae",
+      image: "./images/team1.jpg",
       name: "Gurpreet Singh",
       position: "Front end Devloper",
       svg: <svg
@@ -22,7 +22,7 @@ const team = [
   
     },
     {
-      image: "https://img.freepik.com/free-photo/widely-smiling-businesswoman-working-laptop-sitting-cafe_197531-341.jpg?w=1380&t=st=1690310029~exp=1690310629~hmac=1c647dd7ffe1e1b070207fa5d6e49d6fb50ee2c6d30a6562fc7818865dbe5ab4",
+      image: "https://cdn.pixabay.com/photo/2017/09/20/10/29/beautiful-2768032_1280.jpg",
       name: "Henny",
       position: "Designer",
       svg: <svg
@@ -38,7 +38,7 @@ const team = [
   
     },
     {
-      image: "https://img.freepik.com/free-photo/young-stylish-smiling-man-co-working-office-startup-freelancer-holding-using-tablet_285396-9048.jpg?w=1380&t=st=1690310759~exp=1690311359~hmac=801714bc43fe0baef3d84f859feb8190e7c0dc5aeca4ae3d026ae1c3cfefa151",
+      image: "https://cdn.pixabay.com/photo/2015/01/08/18/30/entrepreneur-593371_1280.jpg",
       name: "Jonn Markos",
       position: "Back-end Developer",
       svg: <svg
@@ -84,7 +84,7 @@ const Team = () => {
                 <div className="relative overflow-hidden bg-cover bg-no-repeat">
                   <img
                     src={ele.image}
-                    className="w-full rounded-t-lg"
+                    className="w-full rounded-t-lg h-[22rem]"
                   />
                   <a href="#!">
                     <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed" />
