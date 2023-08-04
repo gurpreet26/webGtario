@@ -34,11 +34,12 @@ const NavBar = () => {
     <header ref={app} className='' >
 
       <nav className="flex flex-wrap items-center justify-between  md:py-2 md:mx-10 px-1 text-lg text-white  content-center font-bold border-b-2 ">
-        <img className='logo h-9 lg:h-12 text-white' src='/images/logo.png' />
+        <img className='logo h-9 lg:h-12 text-white' src='/images/logo.png' alt='logo'/>
         <div className="block xl:hidden">
           <button
             className=" logo flex items-center py-2 hover:text-white hover:border-white"
             onClick={() => toggleExpansion(!isExpanded)}
+            role="button"
           >
             {isExpanded ? <AiOutlineClose className='h-8 w-12' /> : <RiMenu3Line className='h-8 w-10'/>}
           </button>

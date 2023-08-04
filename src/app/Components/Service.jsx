@@ -67,11 +67,11 @@ function Service() {
           <div  className="overflow-hidden px-2  py-4 my-6 pb-8 transition-colors duration-300 text-white transform  bg-gray-900 rounded-lg dark:bg-gray-800">
 
 
-            <p className="text-lg font-medium  text-center">{ele.name}</p>
-            <h4 className="mt-2 text-3xl font-semibold  text-center">
-              {ele.price}  <span className="text-[0.6rem]  align-baseline">starting price</span>
-            </h4>
-            <p className="mt-4 text-sm text-center">
+            <p className="text-lg font-medium text-white text-center">{ele.name}</p>
+            <h3 className="mt-2 text-3xl font-semibold text-white text-center">
+              {ele.price}  <span className="text-[0.6rem] text-white align-baseline">starting price</span>
+            </h3>
+            <p className="mt-4 text-sm text-white text-center">
               {ele.title}
             </p>
             <div className="mt-8  space-y-8">
