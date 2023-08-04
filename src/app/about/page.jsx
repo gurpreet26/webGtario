@@ -1,8 +1,6 @@
-"use client"
+
 import React from 'react'
-import { useRef, useLayoutEffect, useEffect } from 'react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all';
+
 import { IoCodeWorking } from 'react-icons/io5'
 import { AiOutlineUsergroupAdd } from 'react-icons/ai'
 import { AiOutlineCloudDownload } from 'react-icons/ai'
@@ -11,31 +9,33 @@ import { BiLogoInstagram, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
 import { useRouter } from 'next/navigation'
 import FadeIn from '../Components/FadeIn'
 import Team from '../Components/Team';
+import Me from '../Components/Me';
 import TextReveal from '../Components/TextReval';
+import Link from 'next/link';
 const stats = [
   {
     icon: <IoCodeWorking/>,
     unit: "20+",
     title: "Projects",
-    message: "Its something thats many of the wisest people in history have kept in mind"
+    message: "Designed and developed custom website using Figma, React, Express, and MongoDB "
   },
   {
     icon: <AiOutlineUsergroupAdd />,
     unit: "15+",
     title: "Customser",
-    message: "Its something thats many of the wisest people in history have kept in mind"
+    message: "Our dedication to excellence and customer satisfaction means am committed to help you to achieve your online goals."
   },
   {
     icon: <AiOutlineCloudDownload />,
-    unit: "5+",
+    unit: "15+",
     title: "Mobile Apps",
-    message: "Its something thats many of the wisest people in history have kept in mind"
+    message: "React native apps that are supported by the target platform, which can include iOS, Android, Windows, macOS, and others."
   },
   {
     icon: <CgWebsite />,
     unit: "40+",
     title: "SEO",
-    message: "Its something thats many of the wisest people in history have kept in mind"
+    message: "Optimizing a website or web page to increase its visibility and ranking in search engine results pages"
   },
 ]
 
@@ -43,22 +43,22 @@ const steps = [
   {
     name: "User Story",
     unit: "1",
-    message: " Skate ipsum dolor sit amet, alley oopolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm.olor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. vert mute-air Colby Carter flail 180 berm."
+    message: "Define the website's purpose and target audience.Create user stories that outline the features and functionalities required for the website"
   },
   {
     name: "Design",
     unit: "2",
-    message: " Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm."
+    message: " Use Figma to create the website's design and wireframes based on the user stories. Design the website's layout, color schemes, typography, and other visual elements."
   },
   {
     name: "Development",
     unit: "3",
-    message: " Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm."
+    message: "Implement the frontend using React, utilizing the designs created in Figma. Connect the frontend to the backend by making API calls for data retrieval and manipulation."
   },
   {
     name: "Test",
     unit: "4",
-    message: " Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm."
+    message: "Perform user acceptance testing (UAT) with real users or stakeholders to validate that the website meets the user stories' requirements. Conduct cross-browser and cross-device testing to ensure compatibility across various platforms."
   },
 
 ]
@@ -72,65 +72,21 @@ const About = () => {
 
 
 
- const t2="As an Ontario-based web design agency, we take immense pride in creating websites that embody the essence of this beautiful province. Our agency is dedicated to delivering top-notch website design solutions that showcase the best of your brand and captivate your audience"
+ const t2="I will collaborate closely with you to understand your vision, goals, and target audience, creating a website that reflects your brand's personality and captures the essence of your business. Whether you need a stunning portfolio, e-commerce store, Wordpress website, appointment booking system or engaging blog, we have the perfect solution for your business"
 
 
   return (
     
     < div  className=''>
 
-      <div className='w-11/12  bg-gray-900 shadow-2xl m-auto mb-2  '>
-        <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 shadow-lg">
-          <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
-            <svg
-              className="absolute left-0 hidden h-full text-gray-900 transform -translate-x-1/2 lg:block"
-              viewBox="0 0 100 100"
-              fill="currentColor"
-              preserveAspectRatio="none slice"
-            >
-              <path d="M50 0H100L50 100H0L50 0Z" />
-            </svg>
-            <img
-              className=" img1 object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
-            />
-          </div>
-          <div className="relative overflow-hidden flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
-            <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-              <p className="h1 inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue-500 uppercase rounded-full bg-teal-accent-400">
-                Brand new
-              </p>
-              <h2 className="h1 mb-5 font-sans overflow-hidden  text-lg font-semibold  tracking-tight text-white sm:text-3xl sm:leading-none">
-              We are specializes in best website design and development services.
-                
-              </h2>
-              <p className="par pr-5 mb-5 text-sm text-white md:text-base">
-              We are Moga Studio, a company based in Hamilton, Ontario that provide cheapest price in GTA and high quality design—always providing 
-              responsive design which works on all devices—so you can focus on growing your business instead of worrying about how people find it
-               
-              </p>
-              <div className="par flex items-center">
-                <button className=" inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide bg-blue-500 text-white transition duration-200 rounded shadow-md "
-                  type="button" onClick={() => router.push('/service')}>
-                  Explore More
-                </button>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
+ <Me/>
 
 
 
  
 
       {/* stats */}
-      <div className="px-4 py-16 shadow-lg mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 py-6 shadow-lg mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-5  mb-4">
 
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -160,23 +116,23 @@ const About = () => {
       </div>
   
       {/* steps */}
-      <FadeIn vars={{ y: -100 }}>
+     
       <div className="overflow-hidden px-4 py-16 shadow-lg mx-auto sm:max-w-xl rounded-md bg-gray-900 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
 
 
-
+      <FadeIn vars={{ y: -100 }}>
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+          <h2 className="max-w-xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
 
 
-            How  we make your website
+            How I make your custom website
           </h2>
           <p className="text-base text-gray-300 md:text-lg">
-          We leverage the latest technologies and design trends to create websites that make a lasting impact and keep your audience coming back for more
+          I leverage the latest technologies and design trends to create websites that make a lasting impact and keep your audience coming back for more
           </p>
         </div>
-
+        </FadeIn>
 
         <div className="relative grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-4 sm:grid-cols-2">
           <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex">
@@ -198,6 +154,7 @@ const About = () => {
               <p className="text-sm text-gray-800 z-10">
                 {ele.message}
               </p>
+              
             </div>
 
 
@@ -206,204 +163,20 @@ const About = () => {
         </div>
 
         <div className="text-center">
-          <a
-            href="/"
+          <Link
+            href="/contact"
             className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-blue-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
           >
           Contact US
-          </a>
+          </Link>
         </div>
       </div>
-     </FadeIn>
+  
      <TextReveal title={t2}/>
    <Team/>
 
       {/* faq */}
-    <FadeIn vars={{x:200, opacity:0}}>
-      <section className="faq container bg-gray-900 w-11/12 m-auto rounded-md md:px-6 ">
-        <div className="container px-6 py-12 mx-auto">
-          <h1 className="text-2xl font-semibold  lg:text-3xl text-white">
-            Frequently asked questions.
-          </h1>
-          <div className="grid grid-cols-1 gap-8 mt-8 lg:mt-16 md:grid-cols-2 xl:grid-cols-3">
-            <div>
-              <div className="inline-block p-3 text-white bg-blue-600 rounded-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h1 className="text-xl font-semibold text-white dark:text-white">
-                  What can i expect at my first consultation?
-                </h1>
-                <p className="mt-2 text-sm text-gray-300 dark:text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                  placeat, consequatur eveniet veritatis quos dignissimos beatae
-                  dolores exercitationem laboriosam officia magnam atque blanditiis
-                  illum doloremque magni ex corrupti tempora quis.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="inline-block p-3 text-white bg-blue-600 rounded-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h1 className="text-xl font-semibold text-white dark:text-white">
-                  What are your opening house?
-                </h1>
-                <p className="mt-2 text-sm text-gray-300 dark:text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                  placeat, consequatur eveniet veritatis quos dignissimos beatae
-                  dolores exercitationem laboriosam officia magnam atque blanditiis
-                  illum doloremque magni ex corrupti tempora quis.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="inline-block p-3 text-white bg-blue-600 rounded-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h1 className="text-xl font-semibold text-white dark:text-white">
-                  Do i need a referral?
-                </h1>
-                <p className="mt-2 text-sm text-gray-300 dark:text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                  placeat, consequatur eveniet veritatis quos dignissimos beatae
-                  dolores exercitationem laboriosam officia magnam atque blanditiis
-                  illum doloremque magni ex corrupti tempora quis.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="inline-block p-3 text-white bg-blue-600 rounded-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h1 className="text-xl font-semibold text-white dark:text-white">
-                  Is the cost of the appoinment covered by private health insurance?
-                </h1>
-                <p className="mt-2 text-sm text-gray-300 dark:text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                  placeat, consequatur eveniet veritatis quos dignissimos beatae
-                  dolores exercitationem laboriosam officia magnam atque blanditiis
-                  illum doloremque magni ex corrupti tempora quis.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="inline-block p-3 text-white bg-blue-600 rounded-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h1 className="text-xl font-semibold text-white dark:text-white">
-                  What is your cancellation policy?
-                </h1>
-                <p className="mt-2 text-sm text-gray-300 dark:text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                  placeat, consequatur eveniet veritatis quos dignissimos beatae
-                  dolores exercitationem laboriosam officia magnam atque blanditiis
-                  illum doloremque magni ex corrupti tempora quis.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="inline-block p-3 text-white bg-blue-600 rounded-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h1 className="text-xl font-semibold text-white dark:text-white">
-                  What are the parking and public transport options?
-                </h1>
-                <p className="mt-2 text-sm text-gray-300 dark:text-gray-300">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                  placeat, consequatur eveniet veritatis quos dignissimos beatae
-                  dolores exercitationem laboriosam officia magnam atque blanditiis
-                  illum doloremque magni ex corrupti tempora quis.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      </FadeIn>
+ 
 
 
     </div>

@@ -63,17 +63,17 @@ const Team = () => {
 
 
   return (
-<FadeIn vars={{x:-200}}>
+
     <div className="team container my-2 mx-auto md:px-6  rounded-md text-white shadow-xl w-11/12 m-auto ">
 
-    <section className="py-4 text-center">
-
+    <section className="pt-20 pb-4 text-center">
+    <FadeIn  vars={{x:-200}}>
       <h2 className="pb-3 text-4xl font-bold">
         Meet Your Team
       </h2>
 <p className='mb-3'>We are a small, but highly skilled team of web developers. </p>
 
-   
+   </FadeIn>
       <div className="grid gap-x-6 md:grid-cols-3 pt-3 lg:gap-x-12">
 
         {
@@ -118,7 +118,7 @@ const Team = () => {
     </section>
 
   </div>
-  </FadeIn>
+
   )
 }
 

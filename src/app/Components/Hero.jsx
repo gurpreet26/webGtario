@@ -16,16 +16,16 @@ const Hero = () => {
 
 
 <>
-<div className='h-screen md:flex justify-around items-center'>
+<div className='h-screen flex flex-col md:flex-row justify-around items-center'>
 
 
 <div className='text-white'>
-<h1 className='opacity-60 leading-none md:text-[10vw] text-[16vw]  overflow-hidden uppercase font-black md:ml-[20px] ml-[5px]'>CREATIVE</h1>
-<h1 className='opacity-60 leading-none md:text-[10vw] text-[16vw] overflow-hidden  uppercase font-black md:ml-[160px] ml-[40px] '>DEVELOPER</h1>
-<h3 className='text-end opacity-60 leading-none md:text-[1vw] text-[3vw] overflow-hidden  uppercase font-black'>BASED IN HAMITON</h3>
+<h1 className='opacity-80 leading-none md:text-[10vw] text-[16vw]  overflow-hidden uppercase font-black md:ml-[20px] ml-[5px]'>CREATIVE</h1>
+<h1 className='opacity-80 leading-none md:text-[10vw] text-[16vw] overflow-hidden  uppercase font-black md:ml-[160px] ml-[40px] '>DEVELOPER</h1>
+<h3 className='text-end opacity-80 leading-none md:text-[1vw] text-[3vw] overflow-hidden  uppercase font-black'>BASED IN HAMITON</h3>
 </div>
 <Image
-  src='/images/sidhu.png'
+  src='/images/profile1.png'
   width={500}
   height={100}
   />

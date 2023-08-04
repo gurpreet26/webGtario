@@ -16,7 +16,7 @@ const data= [
     },
     {
         svg:  <MdOutlineMail className='h-6 w-10'/>,
-        name:"hello@mogastudio.com"
+        name:"hello@gurpreetlambton.ca"
     },
     {
         svg:  <BsTelephone className='h-6 w-10'/>,
@@ -37,12 +37,12 @@ const ContactUs = () => {
 
   <div className='md:flex justify-around'>
 
-<FadeIn vars={{ y:-200 ,duration:2}}>
+<FadeIn vars={{ y:-200 }}>
     <img className="hidden lg:block w-auto  m-auto"
     src="./images/seo1.png"
     alt="cc"/>
     </FadeIn>
-    <FadeIn vars={{y:-200 ,duration:2}}>
+    <FadeIn vars={{y:-200 }}>
     <img
     className=" w-auto m-auto"
     src="./images/about.png"
@@ -55,7 +55,7 @@ const ContactUs = () => {
 <div className="top text-center mt-8 ">
   <p className="font-medium text-white ">Contact us</p>
   <h1 className="mt-2 text-2xl font-semibold text-white md:text-3xl dark:text-white">
-    We’d love to hear from you
+    I love to hear from you
   </h1>
   <p className="mt-3 text-white">
     Chat to our friendly team.
@@ -68,7 +68,7 @@ const ContactUs = () => {
 <div className="lg:flex lg:items-center lg:-mx-6">
   <div className="left lg:w-1/2 lg:mx-6">
     <h1 className="text-2xl font-semibold capitalize hidden md:inline text-white lg:text-3xl">
-      Contact us for more info
+      Contact ME
     </h1>
     <div className="mt-6 space-y-8 md:mt-8">
         {
@@ -110,7 +110,7 @@ const ContactUs = () => {
           </label>
           <input
             type="text"
-            placeholder="webGtario"
+            placeholder="Full name"
             className="block w-full px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
           />
         </div>
@@ -120,7 +120,7 @@ const ContactUs = () => {
           </label>
           <input
             type="email"
-            placeholder="name@example.com"
+            placeholder="your@email.com"
             className="block w-full px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
           />
         </div>

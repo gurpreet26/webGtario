@@ -15,16 +15,18 @@ const FadeIn = ({ children, vars })=>{
     useIsomorphicLayoutEffect(() => {
       const ctx = gsap.context(() => {
         gsap.registerPlugin(ScrollTrigger);
+    
         Animation.current = gsap.from(el.current.children, { 
             opacity:0,
-            duration: 2,
-            stagger:1,
+           
+            stagger:0.5,
             ...vars,
             scrollTrigger: {
               trigger: el.current,
-              start: "top 80%",
+              start: "top 90%",
               end:"bottom 60%",
               scrub: 3,   
+         
             }
         });
       });

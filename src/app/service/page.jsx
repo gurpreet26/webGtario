@@ -2,7 +2,7 @@ import React from 'react'
 import Service from '../Components/Service'
 import {TiTick} from 'react-icons/ti'
 import {RxCross2} from 'react-icons/rx'
-import Cta from '../Components/Cta'
+
 import FadeIn from '../Components/FadeIn'
 
 const page = () => {
@@ -62,7 +62,7 @@ const page = () => {
               <td className="whitespace-nowrap px-6 py-4">On Demand</td>
             </tr>
             <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Free hosting for 1 year</td>
+              <td className="whitespace-nowrap px-6 py-4 font-medium">Free hosting for 1st year</td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
@@ -74,7 +74,7 @@ const page = () => {
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
             </tr>
             <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 hover:text-gray-900">
-              <td className="whitespace-nowrap px-6 py-4 font-medium">Contact Form</td>
+              <td className="whitespace-nowrap px-6 py-4 font-medium">SSL certificate</td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>
               <td className="whitespace-nowrap px-6 py-4"><TiTick/></td>

@@ -19,7 +19,7 @@ const VideoSection = () => {
 <video className=" h-full w-screen object-cover select-none" src="/earth.mp4" muted autoPlay loop></video>
   <div className='w-full h-full  lg:whitespace-nowrap absolute bg-black select-none mix-blend-multiply top-0 '>
   <span className={bebas.className}>
-<h1 className='h1  text-white ml-3 md:text-[16vw] w-screen tracking-[1rem] select-none font-bold'>WEB CREATIVE</h1>
+<h1 className='h1  text-white ml-3 md:text-[17vw] w-screen tracking-[1rem] select-none font-bold'>WEB CREATIVE</h1>
 </span>
 
   </div>

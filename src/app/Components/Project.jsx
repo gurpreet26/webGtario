@@ -52,9 +52,9 @@ const Project = () => {
         </FadeIn>
         <FadeIn vars={{ y: -100 , duration:2, }}>
         <p className="block w-full  mt-4 text  text-gray-50">
-        Our team of seasoned designers and developers bring years of experience to the table. 
-        From ideation to execution, we ensure every aspect of your website and booking system is crafted with precision
-         and attention to detail. We focus on user experience, page speed, and mobile responsiveness to ensure your website stands out in search engines and delights your visitors
+       
+        From ideation to execution, I ensure every aspect of your website and booking system is crafted with precision
+         and attention to detail. I focus on user experience, page speed, and mobile responsiveness to ensure your website stands out in search engines and delights your visitors
         </p>
         </FadeIn>
     </div>

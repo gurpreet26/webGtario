@@ -34,7 +34,7 @@ const NavBar = () => {
     <header ref={app} className='' >
 
       <nav className="flex flex-wrap items-center justify-between  md:py-2 md:mx-10 px-1 text-lg text-white  content-center font-bold border-b-2 ">
-        <img className='logo h-9 lg:h-12 text-white' src='/images/11.png' />
+        <img className='logo h-9 lg:h-12 text-white' src='/images/logo.png' />
         <div className="block xl:hidden">
           <button
             className=" logo flex items-center py-2 hover:text-white hover:border-white"
@@ -48,7 +48,7 @@ const NavBar = () => {
           } w-full block  xl:flex xl:items-center xl:w-auto`}>
 
           <ul
-            className="text-base text-white pt-4 xl:flex text-center gap-3 md:justify-between tracking-wider md:pt-2 md:px-2 uppercase font-bold" >
+            className="text-base text-white pt-4 xl:flex text-center gap-2 md:justify-between tracking-wider md:pt-2 md:px-2 uppercase font-bold" >
             <li className="logo pb-2 text-xl text-white py-2 md:px-6 text-center border-b lg:border-b-0 "> 
               <Link onClick={() => toggleExpansion(!isExpanded)} href="/"> Home</Link>
             </li>
@@ -68,8 +68,8 @@ const NavBar = () => {
           </ul>
 
         </div>
-
-        {/* <div className={`${isExpanded ? `block` : `hidden`
+{/* 
+        <div className={`${isExpanded ? `block` : `hidden`
           } w-full block  xl:flex xl:items-center xl:w-auto`}>
 
           <ul
@@ -94,10 +94,8 @@ const NavBar = () => {
 
         </div> */}
 
-        {/* <button className="logo hidden ml-8 whitespace-nowrap xl:inline-flex items-center justify-center px-8 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-500  hover:text-blue-500 hover:bg-white "
-          type="button" onClick={() => router.push('/contact')}>
-          Get Quote
-        </button> */}
+
+       
 
       </nav>
     </header>

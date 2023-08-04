@@ -27,10 +27,7 @@ const Footer = () => {
 
     
         <Link className="text-base lg:text-xl text-white transition-colors duration-300   rounded-lg  px-8 " href="/">
-          <Image src="/images/11.png" alt="logo"   width="0"
-    height="0"
-    sizes="100vw"
-    className="w-full h-auto" />
+        <img className='logo h-9 lg:h-12 text-white' src='/images/logo.png' />
           </Link>
        
 
@@ -43,7 +40,7 @@ const Footer = () => {
           <Link className="text-sm text-white transition-colors duration-300  hover:bg-white  hover:text-gray-900  rounded-lg  p-1" href="/contact">CONTACT</Link>
         </div>
         <p className="text-xs lg:text-sm text-white lg:mt-0 hover:bg-white  hover:text-gray-900  rounded-lg  pb-3 ">
-          © Copyright 2023 MogaStudio.
+          © Copyright 2023.
         </p>
       </div>
 

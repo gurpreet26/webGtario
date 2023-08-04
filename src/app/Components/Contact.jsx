@@ -8,7 +8,7 @@ const data = [
         icon: <MdOutlineMail/>,
         name: " Email",
         message: "Email to get the quick quote.",
-        contact: " hello@mogastudio.com"
+        contact: " hello@gurpreetlambton.ca"
     },
     {
         icon:<BsTelephone/> ,
@@ -33,7 +33,7 @@ const Contact = () => {
                 <div className='text-center pt-3'>
                     <p className="font-medium text-blue-400">Contact us</p>
                     <h1 className="mt-2 text-2xl font-semibold text-white md:text-3xltext-white">
-                        We’d love to hear from you
+                       I will be love to hear from you
                     </h1>
                     <p className="mt-3 text-gray-300">
                         Our friendly team is always here to chat.

@@ -1,6 +1,7 @@
-
+"use client"
 import React from 'react'
 import FadeIn from './FadeIn'
+import { useRouter } from 'next/navigation'
 
 
 
@@ -8,7 +9,7 @@ const data =[
     {
       name:"Basic",
       price:"$ 299",
-      title:"user-friendly and responsive websites that reflect  your unique brand identity",
+      title:"Wordpress website with user-friendly and responsive design that reflect  your unique brand identity",
       offer:"3 - 5 pages",
       platform: " Responsive Design",
       contact:"Contact form",
@@ -17,7 +18,7 @@ const data =[
     {
         name:"Reservation Booking website",
         price:"$ 999",  
-        title:"Efficiently manage bookings and reservations with our advanced  booking systems",
+        title:"Booking systems are built to simplify the booking process for both you and your customers",
         offer:"Services Packages",
         platform: " Automated notifications",
         contact:"Calendar Synchronizations",
@@ -26,7 +27,7 @@ const data =[
       {
         name:"Custom",
         price:"$ 6999",
-        title:"Experience the magic of scroll effects that take your website to new heights",
+        title:"Custom web design solutions are meticulously crafted to ensure outstanding user experience",
         offer:"Unique Design",
         platform: "unlimited animations",
         contact:"unlimited revision",
@@ -37,17 +38,19 @@ const data =[
   ]
 
 function Service() {
-  
+  const router = useRouter()
 
   return (
     <div className=' py-8   shadow-lg mt-2 w-11/12 m-auto rounded-xl'>
  <FadeIn vars={{ y: 100 ,duration:0.3 }}>
       <div className="container px-6 pt-1 pb-1 mx-auto text-center">
-        <div className="max-w-xl mx-auto text-white">
+        <div className="max-w-2xl mx-auto text-white">
 
           <h1 className="logo text-3xl font-semibold  dark:text-white lg:text-5xl"> Pricing Plan</h1>
 
-          <p className=" logo mt-2  dark:">Lorem ipsuimilique obcaecati illum mollitia.</p>
+          <p className=" logo my-2  dark:">
+          Discover the power of tailor-made websites that perfectly align with your business goals.
+          </p>
 
         </div>
 
@@ -60,8 +63,8 @@ function Service() {
       <div className=' flex flex-col max-w-screen-xl justify-center items-center md:flex-row my-5 md:w-9/12  px-5 rounded-lg gap-6 m-auto'>
 
         {data.map((ele, index) => (
- <FadeIn key={index} vars={{ y:-100 ,duration:1 }}>
-          <div  className="overflow-hidden px-2 py-4 my-6 pb-8 transition-colors duration-300 text-white transform  bg-gray-900 rounded-lg dark:bg-gray-800">
+ <FadeIn key={index} vars={{ y:-50 ,duration:1 }}>
+          <div  className="overflow-hidden px-2  py-4 my-6 pb-8 transition-colors duration-300 text-white transform  bg-gray-900 rounded-lg dark:bg-gray-800">
 
 
             <p className="text-lg font-medium  text-center">{ele.name}</p>
@@ -117,7 +120,9 @@ function Service() {
 
 
             </div>
-            <button className="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md  hover:text-blue-500 hover:bg-white focus:outline-none focus:bg-blue-600">
+            <button 
+            className="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md  hover:text-blue-500 hover:bg-white focus:outline-none focus:bg-blue-600"
+            onClick={() => router.push('/contact')}>
               {ele.plan}
             </button>
           </div>
