@@ -54,12 +54,12 @@ const ContactUs = () => {
      
   // };
 
-  console.log(process.env.service_id)
+
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.service_id, process.env.template_id , form.current, process.env.public_key)
+    emailjs.sendForm("service_ws5ovai", 'template_yq1a06d', form.current, 'LLqzyd8XJeH13Rh5m')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
