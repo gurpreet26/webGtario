@@ -8,7 +8,7 @@ const team = [
       name: "Gurpreet Singh",
       position: "Front end Devloper",
       svg: <svg
-        className="absolute text-white dark:text-neutral-700 left-0 bottom-0"
+        className="absolute text-white  left-0 bottom-0"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >
@@ -26,7 +26,7 @@ const team = [
       name: "Henny",
       position: "Designer",
       svg: <svg
-        className="absolute text-white dark:text-neutral-700  left-0 bottom-0"
+        className="absolute text-white  left-0 bottom-0"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >
@@ -42,7 +42,7 @@ const team = [
       name: "Jonn Markos",
       position: "Back-end Developer",
       svg: <svg
-        className="absolute text-white dark:text-neutral-700 left-0 bottom-0"
+        className="absolute text-white  left-0 bottom-0"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
       >

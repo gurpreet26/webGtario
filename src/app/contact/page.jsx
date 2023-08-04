@@ -57,16 +57,14 @@ const ContactUs = () => {
   <h1 className="mt-2 text-2xl font-semibold text-white md:text-3xl dark:text-white">
     I love to hear from you
   </h1>
-  <p className="mt-3 text-white">
-    Chat to our friendly team.
-  </p>
+
 </div>
 
 
 <section className="bg-gray-900">
 <div className="container px-6 py-3 mx-auto">
 <div className="lg:flex lg:items-center lg:-mx-6">
-  <div className="left lg:w-1/2 lg:mx-6">
+  <div className=" lg:w-full lg:mx-6">
     <h1 className="text-2xl font-semibold capitalize hidden md:inline text-white lg:text-3xl">
       Contact ME
     </h1>

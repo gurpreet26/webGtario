@@ -16,7 +16,7 @@ const Hero = () => {
 
 
 <>
-<div className='h-screen flex flex-col md:flex-row justify-around items-center'>
+<div className='md:h-screen flex flex-col md:flex-row md:justify-around items-center'>
 
 
 <div className='text-white'>
