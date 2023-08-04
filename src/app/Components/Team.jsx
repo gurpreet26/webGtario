@@ -85,10 +85,9 @@ const Team = () => {
                   <img
                     src={ele.image}
                     className="w-full rounded-t-lg h-[15rem] lg:h-[19rem]"
+                    alt='team'
                   />
-                  <a href="#!">
-                    <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed" />
-                  </a>
+                 
                   <p>{ele.svg}</p>
                 </div>
 

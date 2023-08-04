@@ -68,9 +68,9 @@ function Service() {
 
 
             <p className="text-lg font-medium text-white text-center">{ele.name}</p>
-            <h3 className="mt-2 text-3xl font-semibold text-white text-center">
+            <p className="mt-2 text-3xl font-semibold text-white text-center">
               {ele.price}  <span className="text-[0.6rem] text-white align-baseline">starting price</span>
-            </h3>
+            </p>
             <p className="mt-4 text-sm text-white text-center">
               {ele.title}
             </p>

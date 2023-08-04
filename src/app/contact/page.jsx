@@ -66,6 +66,8 @@ const ContactUs = () => {
 
     <img className="hidden lg:block w-auto  m-auto"
     src="./images/seo1.png"
+    max-width= "100%"
+    height="auto"
     alt="cc"/>
    
   
@@ -73,6 +75,8 @@ const ContactUs = () => {
     className=" w-auto m-auto"
     src="./images/about.png"
     alt="cc"
+    max-width= "100%"
+    height="auto"
   />
     </div>
     
@@ -113,7 +117,7 @@ const ContactUs = () => {
     
     <div className=" text-center md:text-left w-80 md:mt-8 self-start ">
     <FadeIn vars={{y:-200}}>
-      <h3 className="text-white ">Follow us</h3>
+      <h2 className="text-white ">Follow us</h2>
       </FadeIn>
       <FadeIn vars={{y:-200}}>
       <div className="flex md:items-left justify-center md:justify-start mt-4 text-center gap-4 text-white ">
