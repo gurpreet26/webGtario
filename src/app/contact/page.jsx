@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 
 import {BiLogoInstagram,BiLogoGithub,BiLogoLinkedin,BiLogoTiktok} from 'react-icons/bi'
 import { MdOutlineMail } from 'react-icons/md'
@@ -25,15 +25,28 @@ const data= [
     },
 ]
 
+const Result =()=>{
+  return(
+    <p className='text-white mt-3'> Your message is successfully sent. I will contact you soon</p>
+  )
+}
 
 const ContactUs = () => {
-
+  const[result , showresult] =useState(false);
   const form =useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_1f963w9', 'template_yq1a06d', form.current, 'Z9BNo-HWkmFvHcD3y')
+    .then((result) => {
+      
+  }, (error) => {
+      console.log(error.text);
+  });
+  e.target.reset()
+  showresult(true)
+  setTimeout(() => showresult(false), 3000);
      
   };
 
@@ -44,41 +57,33 @@ const ContactUs = () => {
   <section  className="bg-gray-900 w-11/12 m-auto">
 
 
-
+  <FadeIn vars={{ y:-200 }}>
   <div className='md:flex justify-around'>
 
-<FadeIn vars={{ y:-200 }}>
+
     <img className="hidden lg:block w-auto  m-auto"
     src="./images/seo1.png"
     alt="cc"/>
-    </FadeIn>
-    <FadeIn vars={{y:-200 }}>
+   
+  
     <img
     className=" w-auto m-auto"
     src="./images/about.png"
     alt="cc"
-  /></FadeIn>
+  />
     </div>
+    </FadeIn>
+</section>
 
-
-<div className=' w-full m-auto shadow-lg'>
-<div className="top text-center mt-8 ">
-  <p className="font-medium text-white ">Contact us</p>
-  <h1 className="mt-2 text-2xl font-semibold text-white md:text-3xl dark:text-white">
-    I love to hear from you
-  </h1>
+<div className='text-center py-5 '>
+<h1 className="font-medium text-4xl text-white ">Contact us</h1>
 
 </div>
 
+<div className='text-white flex flex-col md:flex-row justify-center items-center '>
 
-<section className="bg-gray-900">
-<div className="container px-6 py-3 mx-auto">
-<div className="lg:flex lg:items-center lg:-mx-6">
-  <div className=" lg:w-full lg:mx-6">
-    <h1 className="text-2xl font-semibold capitalize hidden md:inline text-white lg:text-3xl">
-      Contact ME
-    </h1>
-    <div className="mt-6 space-y-8 md:mt-8">
+    
+  <div className="mt-2  space-y-8 md:mt-8  self-start">
         {
             data.map((ele, index) =>(
                 <div key={index} className="flex items-start text-white mx-1">
@@ -89,76 +94,76 @@ const ContactUs = () => {
                  </div>
             ))
         }
-     
+   
 
   
-    </div>
-
-    <div className="mt-6 w-80 md:mt-8">
-      <h3 className="text-white ">Follow us</h3>
-      <div className="flex mt-4  gap-4 text-white ">
     
-        <BiLogoGithub className='h-10 w-8'/>
+    <div className=" text-center md:text-left w-80 md:mt-8 self-start ">
+      <h3 className="text-white ">Follow us</h3>
+      <div className="flex md:items-left justify-center md:justify-start mt-4 text-center gap-4 text-white ">
+    
+        <BiLogoGithub className='h-10 w-8  text-center'/>
              <BiLogoLinkedin className='h-10 w-8  '/>
              <BiLogoInstagram className='h-10 w-8 '/>
              <BiLogoTiktok  className='h-10 w-8 '/>
       </div>
     </div>
+
   </div>
 
-  <div className="right mt-8 lg:w-1/2 lg:mx-6">
-    <div className="w-full px-4 py-10 mx-auto overflow-hidden rounded-lg shadow-2xl bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
-      <h1 className="text-lg font-medium text-gray-300">
-        What do you want to ask
-      </h1>
-      <form ref={form} onSubmit={sendEmail} className="mt-6">
-        <div className="flex-1">
-          <label className="block mb-2 text-sm text-gray-300 dark:text-gray-200">
-            Full Name
-          </label>
-          <input
-          name="name"
-            type="text"
-            placeholder="Full name"
-            className="block w-full px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-          />
-        </div>
-        <div className="flex-1 mt-6">
-          <label className="block mb-2 text-sm text-gray-300 ">
-            Email address
-          </label>
-          <input
-            type="email"
-            name='email'
-            placeholder="your@email.com"
-            className="block w-full px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-          />
-        </div>
-        <div className="w-full mt-6">
-          <label className="block mb-2 text-sm text-gray-300 dark:text-gray-200">
-            Message
-          </label>
-          <textarea
-          name='message'
-            className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-            placeholder="Message"
-            defaultValue={""}
-          />
-        </div>
-        <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-          get in touch
-        </button>
-      </form>
-    </div>
+
+
+
+
+  <div className=" md:w-1/2 w-full  lg:mx-6">
+  <div className="w-full px-4 py-10 mx-auto overflow-hidden  rounded-lg  lg:max-w-xl shadow-gray-300/50">
+    <h1 className="text-lg font-medium text-white">
+      What do you want to ask
+    </h1>
+    <form ref={form} onSubmit={sendEmail}  className="mt-6">
+      <div className="flex-1">
+        <label className="block mb-2 text-sm text-white">
+          Full Name
+        </label>
+        <input
+        required
+          type="text"
+          placeholder="Full name"
+          className="block w-full px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+        />
+      </div>
+      <div className="flex-1 mt-6">
+        <label className="block mb-2 text-sm text-white">
+          Email address
+        </label>
+        <input
+        required
+          type="email"
+          placeholder="your@example.com"
+          className="block w-full px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md  focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+        />
+      </div>
+      <div className="w-full mt-6">
+        <label className="block mb-2 text-sm text-white">
+          Message
+        </label>
+        <textarea
+        required
+          className="block w-full h-32 px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48  focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+          placeholder="Message"
+        
+        />
+      </div>
+      <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+        get in touch
+
+      </button>
+      <div>{result ? <Result/> :null}</div>
+    </form>
   </div>
 </div>
+
 </div>
-</section>
-</div>
-
-
-
-</section>
 </>
   
   )

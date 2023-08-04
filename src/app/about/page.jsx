@@ -5,8 +5,7 @@ import { IoCodeWorking } from 'react-icons/io5'
 import { AiOutlineUsergroupAdd } from 'react-icons/ai'
 import { AiOutlineCloudDownload } from 'react-icons/ai'
 import { CgWebsite } from 'react-icons/cg'
-import { BiLogoInstagram, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi'
-import { useRouter } from 'next/navigation'
+
 import FadeIn from '../Components/FadeIn'
 import Team from '../Components/Team';
 import Me from '../Components/Me';
@@ -170,6 +169,8 @@ const About = () => {
           Contact US
           </Link>
         </div>
+
+        
       </div>
   
      <TextReveal title={t2}/>
