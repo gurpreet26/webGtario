@@ -1,11 +1,12 @@
-
+"use client"
 import React from 'react'
 
 import {BiLogoInstagram,BiLogoGithub,BiLogoLinkedin,BiLogoTiktok} from 'react-icons/bi'
 import { MdOutlineMail } from 'react-icons/md'
 import {IoLocationOutline} from 'react-icons/io5'
 import {BsTelephone} from 'react-icons/bs'
-
+import {useRef} from 'react'
+import emailjs from 'emailjs-com'
 import FadeIn from '../Components/FadeIn'
  
 
@@ -26,6 +27,15 @@ const data= [
 
 
 const ContactUs = () => {
+
+  const form =useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_1f963w9', 'template_yq1a06d', form.current, 'Z9BNo-HWkmFvHcD3y')
+     
+  };
 
 
   return (
@@ -101,12 +111,13 @@ const ContactUs = () => {
       <h1 className="text-lg font-medium text-gray-300">
         What do you want to ask
       </h1>
-      <form className="mt-6">
+      <form ref={form} onSubmit={sendEmail} className="mt-6">
         <div className="flex-1">
           <label className="block mb-2 text-sm text-gray-300 dark:text-gray-200">
             Full Name
           </label>
           <input
+          name="name"
             type="text"
             placeholder="Full name"
             className="block w-full px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
@@ -118,6 +129,7 @@ const ContactUs = () => {
           </label>
           <input
             type="email"
+            name='email'
             placeholder="your@email.com"
             className="block w-full px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
           />
@@ -127,6 +139,7 @@ const ContactUs = () => {
             Message
           </label>
           <textarea
+          name='message'
             className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
             placeholder="Message"
             defaultValue={""}
