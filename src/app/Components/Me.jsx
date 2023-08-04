@@ -22,7 +22,7 @@ const Me = () => {
               </h2>
               <p className="mb-6 pb-2 text-neutral-500 ">
               I have 5+ years of experience in building and maintaining responsive web applications using JavaScript technologies.
-              I have a bachelor's degree in computer science from Punjab Technical University and I completed my Postgraduation 
+              I have a bachelor degree in computer science from Punjab Technical University and I completed my Postgraduation 
               certification in Computer Software and Database Development at Lambton college.
               With a combination of creativity and technical expertise, I create websites that set new standards for excellence 
               in design and functionality.
