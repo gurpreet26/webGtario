@@ -33,25 +33,42 @@ const Result =()=>{
   )
 }
 
+
+
 const ContactUs = () => {
   const[result , showresult] =useState(false);
   const form =useRef();
 
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm('service_ws5ovai', 'template_yq1a06d', form.current, 'LLqzyd8XJeH13Rh5m')
+  //   .then((result) => {
+      
+  // }, (error) => {
+  //     console.log(error.text);
+  // });
+  // e.target.reset()
+  // showresult(true)
+  // setTimeout(() => showresult(false), 3000);
+     
+  // };
+
+  console.log(process.env.service_id)
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_1f963w9', 'template_yq1a06d', form.current, 'Z9BNo-HWkmFvHcD3y')
-    .then((result) => {
-      
-  }, (error) => {
-      console.log(error.text);
-  });
-  e.target.reset()
+    emailjs.sendForm(process.env.NEXT_PUBLIC_service_id, process.env.NEXT_PUBLIC_template_id , form.current, process.env.NEXT_PUBLIC_public_key)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+        e.target.reset()
   showresult(true)
   setTimeout(() => showresult(false), 3000);
-     
   };
-
 
   return (
     <>
@@ -128,6 +145,7 @@ const ContactUs = () => {
           Full Name
         </label>
         <input
+        name='name'
         required
           type="text"
           placeholder="Full name"
@@ -139,6 +157,7 @@ const ContactUs = () => {
           Email address
         </label>
         <input
+        name='email'
         required
           type="email"
           placeholder="your@example.com"
@@ -150,6 +169,7 @@ const ContactUs = () => {
           Message
         </label>
         <textarea
+        name='message'
         required
           className="block w-full h-32 px-5 py-3 mt-2 text-gray-900 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48  focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
           placeholder="Message"

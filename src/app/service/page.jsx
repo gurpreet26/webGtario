@@ -5,6 +5,13 @@ import {RxCross2} from 'react-icons/rx'
 
 import FadeIn from '../Components/FadeIn'
 
+
+export const metadata = {
+  title: 'Create service page',
+  description: 'service page',
+}
+
+
 const page = () => {
   return (
    <>
