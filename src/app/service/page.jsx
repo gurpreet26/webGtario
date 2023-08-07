@@ -18,7 +18,7 @@ const page = () => {
 
 <FadeIn vars={{y:200}}>
     <div className='lg:flex  bg-black'>
-    <img className='bg-cover m-auto h-96 rounded-lg w-auto ' src='./images/seo.png'/>
+    <img className='bg-cover m-auto h-96 rounded-lg w-auto ' src='./images/seo.png' alt='service'/>
     </div>
     </FadeIn>
   

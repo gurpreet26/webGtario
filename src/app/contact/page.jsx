@@ -98,13 +98,13 @@ const ContactUs = () => {
               
             
                 <div key={index} className="flex items-start text-white mx-1">
-                 
+                   <FadeIn vars={{y:-200}}>
               <div className="mx-2  truncate w-12 ">{ele.svg} </div>
              
          
                    <p className="mx-2  truncate w-72 ">
                    {ele.name}
-                   </p>
+                   </p></FadeIn>
                   
                   
                  </div>

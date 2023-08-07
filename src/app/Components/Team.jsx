@@ -92,14 +92,21 @@ const Team = () => {
                 </div>
 
                 <div className="p-6 text-gray-900">
-                  <h5 className="mb-4 text-lg font-bold">{ele.name}</h5>
+                  <p className="mb-4 text-lg font-bold">{ele.name}</p>
                   <p className="mb-4  dark:text-neutral-500">
                     {ele.position}
                   </p>
                   <ul className="mx-auto flex list-inside gap-3 justify-center">
+                    <li>
                     <BiLogoGithub className='h-6 w-6 ' />
-                    <BiLogoLinkedin className='h-6 w-6 ' />
-                    <BiLogoInstagram className='h-6 w-6 ' />
+                    </li>
+                 <li>
+                 <BiLogoLinkedin className='h-6 w-6 ' />
+                 </li>
+                 <li>
+                 <BiLogoInstagram className='h-6 w-6 ' />
+                 </li>
+                 
                   </ul>
                 </div>
               </div>

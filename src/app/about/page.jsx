@@ -103,9 +103,9 @@ const About = () => {
                   {ele.icon}</svg>
 
               </div>
-              <h6 className="text-4xl font-bold text-white">
+              <h2 className="text-4xl font-bold text-white">
                 {ele.unit}
-              </h6>
+              </h2>
               <p className="mb-2 font-bold  text-white text-md">{ele.title}</p>
               <p className=" text-white">
                 {ele.message}
@@ -179,7 +179,7 @@ const About = () => {
       </div>
   
      <TextReveal title={t2}/>
-   <Team/>
+ 
 
       {/* faq */}
  
