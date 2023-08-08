@@ -21,10 +21,11 @@ const Me = () => {
           <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12">
             <div className="px-6 py-12 md:px-12">
               <h2 className="mb-6 pb-2 text-3xl font-extrabold">
-               ABOUT ME
+             Helllo 👋
               </h2>
               <p className="mb-6 pb-2 text-neutral-500 ">
-              I have 5+ years of experience in building and maintaining responsive web applications using JavaScript technologies.
+              
+              I’m Gurpreet Singh . I have 5+ years of experience in building and maintaining responsive web applications using JavaScript technologies.
               I have a bachelor degree in computer science from Punjab Technical University and I completed my Postgraduation 
               certification in Computer Software and Database Development at Lambton college.
               With a combination of creativity and technical expertise, I create websites that set new standards for excellence 

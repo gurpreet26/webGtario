@@ -12,8 +12,8 @@ const roboto = Roboto({
  
 export const metadata = {
   icons: [{ rel: 'icon', url: Favicon.src }],
-  title: 'Online Booking or Appointment Scheduling Website across ontario, british columbia, alberta, manitoba ',
-  description: 'Experienced in the convenience of our online booking website for effortless appointment scheduling. Simplify your life and book appointments with ease. Try it now! Find web developers near you!',
+  title: ' Gurpreet Singh |Web Developer in Hamilton, Canada | WordPress, Online Booking, and Custom Website Services  ',
+  description: 'Dedicated and experienced web developer who is committed to providing high-quality, bespoke solutions for your online business needs. Whether you require a captivating WordPress website, a seamless online booking website, or a unique custom website',
 }
 
 export default function RootLayout({ children }) {

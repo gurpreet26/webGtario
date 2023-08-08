@@ -44,7 +44,7 @@ function TextReveal({title}) {
     return (
         <>
       
-            <div className="lg:px-14 py-10 pl-4">
+            <div className="lg:px-14 pl-4">
                 <div ref={triggerRef}className="text-gray-900 overflow-hidden " >
                     {title.split("").map((letter, index) => (
                         <span className=" font-bold break-keep text-4xl md:text-6xl  lg:text-[length:var(--headlineBig)] lg:leading-[var(--headlineBig)] 
