@@ -8,7 +8,7 @@ import TextReveal from './Components/TextReval'
 
 
 
-const t = "I'm Gurpreet singh🧑‍💻. 5+ years of expertise in the IT field, possess a diverse skill set that includes developing WordPress websites, appointment booking websites that will handle complex scheduling systems, user authentication, and secure payment gateways and crafting custom web designs using Figma, React, Express and MongoDB. Choose any plan that embody the Canadian values of quality, innovation, and integrity. Let me take your online presence to new heights."
+const t = "I'm Gurpreet singh 🧑‍💻. 5+ years of expertise in the IT field, possess a diverse skill set that includes developing WordPress websites, appointment booking websites that will handle complex scheduling systems, user authentication, and secure payment gateways and crafting custom web designs using Figma, React, Express and MongoDB. Choose any plan that embody the Canadian values of quality, innovation, and integrity. Let me take your online presence to new heights."
 
 export const metadata = {
   title: ' Gurpreet Singh |Web Developer near GTA , ottawa,oakville and London',
