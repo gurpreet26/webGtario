@@ -58,7 +58,7 @@ const NavBar = () => {
               <Link onClick={() => toggleExpansion(!isExpanded)}  href="/work">Work</Link>
             </li>
             <li className="logo pb-2 text-xl text-white py-2 md:px-6 text-center border-b lg:border-b-0">
-              <Link onClick={() => toggleExpansion(!isExpanded)}  href="/about"> About us</Link>
+              <Link onClick={() => toggleExpansion(!isExpanded)}  href="/about"> About</Link>
             </li>
             <li className="logo pb-2 text-xl text-white py-2 md:px-6 text-center border-b lg:border-b-0">
               <Link onClick={() => toggleExpansion(!isExpanded)} href="/service">Service</Link>

@@ -150,18 +150,20 @@ const About = () => {
 
 
               <div className="flex items-center justify-between mb-2 ">
+          
                 <p className="text-lg font-bold leading-5">{ele.name}</p>
                 <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
                   {ele.unit}
                 </p>
               </div>
+         
               <p className="text-sm text-gray-800 z-10">
                 {ele.message}
               </p>
-              
+             
             </div>
 
-
+    
           ))}
         
         </div>
