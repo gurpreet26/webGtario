@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation'
 const data =[
     {
       name:"Basic",
-      price:"$ 299",
+      price:"$ 499",
       title:"Wordpress website with user-friendly and responsive design that reflect  your unique brand identity",
       offer:"3 - 5 pages",
       platform: " Responsive Design",
